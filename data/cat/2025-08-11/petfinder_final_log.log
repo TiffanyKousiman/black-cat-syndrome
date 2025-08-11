@@ -1,0 +1,254 @@
+2025-08-11 23:43:52,762 - INFO - Successfully authenticated with Petfinder API
+2025-08-11 23:43:52,767 - INFO - <------------------------ Starting CAT Data Collection ------------------------>
+
+=== Collection Status for adoptable cats ===
+2025-08-11 23:43:52,771 - INFO - Completed states: 115/115
+2025-08-11 23:43:52,772 - INFO - Partially completed: 0
+2025-08-11 23:43:52,772 - INFO - Failed states: 0
+2025-08-11 23:43:52,773 - INFO - Remaining states: 0
+
+2025-08-11 23:43:52,776 - INFO - Starting collection: adoptable cats across all US states (published after 2019-12-31T23:59:59+00:00)
+2025-08-11 23:43:52,777 - INFO - All states already completed!
+2025-08-11 23:43:52,777 - INFO - Combining adoptable cat files...
+2025-08-11 23:43:52,799 - INFO - Loaded 966 records from 89706_cats.csv
+2025-08-11 23:43:52,822 - INFO - Loaded 1316 records from MO_cats.csv
+2025-08-11 23:43:52,838 - INFO - Loaded 1487 records from MN_cats.csv
+2025-08-11 23:43:52,841 - INFO - Loaded 80 records from OR_cats.csv
+2025-08-11 23:43:52,852 - INFO - Loaded 562 records from 89103_cats.csv
+2025-08-11 23:43:52,856 - INFO - Loaded 73 records from WY_cats.csv
+2025-08-11 23:43:52,866 - INFO - Loaded 681 records from 89523_cats.csv
+2025-08-11 23:43:52,869 - INFO - Loaded 140 records from ME_cats.csv
+2025-08-11 23:43:52,903 - INFO - Loaded 3822 records from RI_cats.csv
+2025-08-11 23:43:52,967 - INFO - Loaded 8340 records from MD_cats.csv
+2025-08-11 23:43:53,006 - INFO - Loaded 5178 records from VA_cats.csv
+2025-08-11 23:43:53,022 - INFO - Loaded 2011 records from IL_cats.csv
+2025-08-11 23:43:53,028 - INFO - Loaded 570 records from 89136_cats.csv
+2025-08-11 23:43:53,034 - INFO - Loaded 532 records from 89048_cats.csv
+2025-08-11 23:43:53,159 - INFO - Loaded 14375 records from NJ_cats.csv
+2025-08-11 23:43:53,164 - INFO - Loaded 234 records from 89415_cats.csv
+2025-08-11 23:43:53,185 - INFO - Loaded 1426 records from CA_cats.csv
+2025-08-11 23:43:53,193 - INFO - Loaded 13 records from SD_cats.csv
+2025-08-11 23:43:53,216 - INFO - Loaded 529 records from 89436_cats.csv
+2025-08-11 23:43:53,224 - INFO - Loaded 220 records from 89408_cats.csv
+2025-08-11 23:43:53,307 - INFO - Loaded 10045 records from CT_cats.csv
+2025-08-11 23:43:53,314 - INFO - Loaded 564 records from 89120_cats.csv
+2025-08-11 23:43:53,321 - INFO - Loaded 560 records from 89121_cats.csv
+2025-08-11 23:43:53,330 - INFO - Loaded 956 records from VT_cats.csv
+2025-08-11 23:43:53,337 - INFO - Loaded 648 records from 89431_cats.csv
+2025-08-11 23:43:53,357 - INFO - Loaded 2723 records from SC_cats.csv
+2025-08-11 23:43:53,366 - INFO - Loaded 983 records from 89024_cats.csv
+2025-08-11 23:43:53,373 - INFO - Loaded 657 records from 89506_cats.csv
+2025-08-11 23:43:53,379 - INFO - Loaded 565 records from 89052_cats.csv
+2025-08-11 23:43:53,385 - INFO - Loaded 559 records from 89113_cats.csv
+2025-08-11 23:43:53,390 - INFO - Loaded 370 records from 89447_cats.csv
+2025-08-11 23:43:53,399 - INFO - Loaded 1004 records from WA_cats.csv
+2025-08-11 23:43:53,413 - INFO - Loaded 1767 records from NY_cats.csv
+2025-08-11 23:43:53,420 - INFO - Loaded 645 records from 89011_cats.csv
+2025-08-11 23:43:53,441 - INFO - Loaded 2795 records from TN_cats.csv
+2025-08-11 23:43:53,446 - INFO - Loaded 565 records from 89119_cats.csv
+2025-08-11 23:43:53,452 - INFO - Loaded 560 records from 89118_cats.csv
+2025-08-11 23:43:53,461 - INFO - Loaded 1058 records from OK_cats.csv
+2025-08-11 23:43:53,471 - INFO - Loaded 1074 records from 89701_cats.csv
+2025-08-11 23:43:53,476 - INFO - Loaded 560 records from 89032_cats.csv
+2025-08-11 23:43:53,488 - INFO - Loaded 1257 records from IA_cats.csv
+2025-08-11 23:43:53,502 - INFO - Loaded 1635 records from MI_cats.csv
+2025-08-11 23:43:53,508 - INFO - Loaded 560 records from 89104_cats.csv
+2025-08-11 23:43:53,519 - INFO - Loaded 1279 records from 89450_cats.csv
+2025-08-11 23:43:53,530 - INFO - Loaded 1277 records from 89451_cats.csv
+2025-08-11 23:43:53,538 - INFO - Loaded 685 records from 89511_cats.csv
+2025-08-11 23:43:53,544 - INFO - Loaded 563 records from 89130_cats.csv
+2025-08-11 23:43:53,561 - INFO - Loaded 511 records from 89131_cats.csv
+2025-08-11 23:43:53,579 - INFO - Loaded 567 records from 89147_cats.csv
+2025-08-11 23:43:53,591 - INFO - Loaded 565 records from 89146_cats.csv
+2025-08-11 23:43:53,599 - INFO - Loaded 533 records from NM_cats.csv
+2025-08-11 23:43:53,615 - INFO - Loaded 1235 records from AZ_cats.csv
+2025-08-11 23:43:53,617 - INFO - Loaded 5 records from AK_cats.csv
+2025-08-11 23:43:53,623 - INFO - Loaded 563 records from 89123_cats.csv
+2025-08-11 23:43:53,629 - INFO - Loaded 563 records from 89122_cats.csv
+2025-08-11 23:43:53,633 - INFO - Loaded 309 records from HI_cats.csv
+2025-08-11 23:43:53,640 - INFO - Loaded 730 records from LA_cats.csv
+2025-08-11 23:43:53,646 - INFO - Loaded 559 records from 89015_cats.csv
+2025-08-11 23:43:53,652 - INFO - Loaded 564 records from 89014_cats.csv
+2025-08-11 23:43:53,683 - INFO - Loaded 4044 records from FL_cats.csv
+2025-08-11 23:43:53,687 - INFO - Loaded 370 records from MS_cats.csv
+2025-08-11 23:43:53,694 - INFO - Loaded 539 records from 89434_cats.csv
+2025-08-11 23:43:53,699 - INFO - Loaded 511 records from 89129_cats.csv
+2025-08-11 23:43:53,704 - INFO - Loaded 564 records from 89128_cats.csv
+2025-08-11 23:43:53,711 - INFO - Loaded 652 records from 89502_cats.csv
+2025-08-11 23:43:53,718 - INFO - Loaded 565 records from 89117_cats.csv
+2025-08-11 23:43:53,723 - INFO - Loaded 561 records from 89074_cats.csv
+2025-08-11 23:43:53,728 - INFO - Loaded 305 records from 89429_cats.csv
+2025-08-11 23:43:53,790 - INFO - Loaded 9036 records from DE_cats.csv
+2025-08-11 23:43:53,795 - INFO - Loaded 378 records from KS_cats.csv
+2025-08-11 23:43:53,822 - INFO - Loaded 3758 records from IN_cats.csv
+2025-08-11 23:43:53,834 - INFO - Loaded 1444 records from 89460_cats.csv
+2025-08-11 23:43:53,840 - INFO - Loaded 561 records from 89134_cats.csv
+2025-08-11 23:43:53,846 - INFO - Loaded 558 records from 89135_cats.csv
+2025-08-11 23:43:53,860 - INFO - Loaded 1495 records from NH_cats.csv
+2025-08-11 23:43:53,866 - INFO - Loaded 513 records from 89143_cats.csv
+2025-08-11 23:43:53,873 - INFO - Loaded 94 records from ID_cats.csv
+2025-08-11 23:43:53,905 - INFO - Loaded 1012 records from 89704_cats.csv
+2025-08-11 23:43:53,935 - INFO - Loaded 2757 records from KY_cats.csv
+2025-08-11 23:43:53,946 - INFO - Loaded 1169 records from 89423_cats.csv
+2025-08-11 23:43:53,951 - INFO - Loaded 559 records from 89101_cats.csv
+2025-08-11 23:43:53,957 - INFO - Loaded 570 records from 89193_cats.csv
+2025-08-11 23:43:53,963 - INFO - Loaded 585 records from 89009_cats.csv
+2025-08-11 23:43:53,969 - INFO - Loaded 512 records from 89149_cats.csv
+2025-08-11 23:43:53,975 - INFO - Loaded 565 records from 89148_cats.csv
+2025-08-11 23:43:53,994 - INFO - Loaded 2921 records from GA_cats.csv
+2025-08-11 23:43:54,028 - INFO - Loaded 4277 records from NC_cats.csv
+2025-08-11 23:43:54,081 - INFO - Loaded 8003 records from DC_cats.csv
+2025-08-11 23:43:54,103 - INFO - Loaded 2908 records from MA_cats.csv
+2025-08-11 23:43:54,108 - INFO - Loaded 311 records from TX_cats.csv
+2025-08-11 23:43:54,119 - INFO - Loaded 1052 records from 89410_cats.csv
+2025-08-11 23:43:54,124 - INFO - Loaded 564 records from 89145_cats.csv
+2025-08-11 23:43:54,135 - INFO - Loaded 1359 records from WV_cats.csv
+2025-08-11 23:43:54,146 - INFO - Loaded 1079 records from 89703_cats.csv
+2025-08-11 23:43:54,155 - INFO - Loaded 1079 records from 89702_cats.csv
+2025-08-11 23:43:54,161 - INFO - Loaded 563 records from 89139_cats.csv
+2025-08-11 23:43:54,170 - INFO - Loaded 926 records from CO_cats.csv
+2025-08-11 23:43:54,176 - INFO - Loaded 553 records from AR_cats.csv
+2025-08-11 23:43:54,182 - INFO - Loaded 565 records from 89107_cats.csv
+2025-08-11 23:43:54,187 - INFO - Loaded 169 records from NE_cats.csv
+2025-08-11 23:43:54,190 - INFO - Loaded 153 records from ND_cats.csv
+2025-08-11 23:43:54,197 - INFO - Loaded 652 records from 89512_cats.csv
+2025-08-11 23:43:54,204 - INFO - Loaded 863 records from AL_cats.csv
+2025-08-11 23:43:54,206 - INFO - Loaded 55 records from MT_cats.csv
+2025-08-11 23:43:54,233 - INFO - Loaded 3671 records from OH_cats.csv
+2025-08-11 23:43:54,236 - INFO - Loaded 214 records from 89406_cats.csv
+2025-08-11 23:43:54,246 - INFO - Loaded 1081 records from WI_cats.csv
+2025-08-11 23:43:54,254 - INFO - Loaded 981 records from 89027_cats.csv
+2025-08-11 23:43:54,260 - INFO - Loaded 557 records from UT_cats.csv
+2025-08-11 23:43:54,279 - INFO - Loaded 558 records from 89183_cats.csv
+2025-08-11 23:43:54,295 - INFO - Loaded 562 records from 89019_cats.csv
+2025-08-11 23:43:54,374 - INFO - Removed 75479 duplicate records
+2025-08-11 23:43:55,044 - INFO - Combined file saved: cat/2025-08-11/adoptable/all_adoptable_cats.csv (79047 unique records)
+2025-08-11 23:43:55,074 - INFO - <------------------------ Data Collection Complete ------------------------>
+2025-08-11 23:44:40,971 - INFO - Successfully authenticated with Petfinder API
+2025-08-11 23:44:40,971 - INFO - <------------------------ Starting CAT Data Collection ------------------------>
+
+=== Collection Status for adopted cats ===
+2025-08-11 23:44:40,974 - INFO - Completed states: 115/115
+2025-08-11 23:44:40,975 - INFO - Partially completed: 0
+2025-08-11 23:44:40,975 - INFO - Failed states: 0
+2025-08-11 23:44:40,976 - INFO - Remaining states: 0
+
+2025-08-11 23:44:40,976 - INFO - Starting collection: adopted cats across all US states (published after 2019-12-31T23:59:59+00:00)
+2025-08-11 23:44:40,977 - INFO - All states already completed!
+2025-08-11 23:44:40,977 - INFO - Combining adopted cat files...
+2025-08-11 23:44:41,090 - INFO - Loaded 11730 records from 89706_cats.csv
+2025-08-11 23:44:41,185 - INFO - Loaded 11414 records from MO_cats.csv
+2025-08-11 23:44:41,277 - INFO - Loaded 11554 records from MN_cats.csv
+2025-08-11 23:44:41,293 - INFO - Loaded 1709 records from OR_cats.csv
+2025-08-11 23:44:41,349 - INFO - Loaded 6342 records from 89103_cats.csv
+2025-08-11 23:44:41,353 - INFO - Loaded 200 records from WY_cats.csv
+2025-08-11 23:44:41,421 - INFO - Loaded 8742 records from 89523_cats.csv
+2025-08-11 23:44:41,449 - INFO - Loaded 3419 records from ME_cats.csv
+2025-08-11 23:44:41,906 - INFO - Loaded 61689 records from RI_cats.csv
+2025-08-11 23:44:42,456 - INFO - Loaded 77328 records from MD_cats.csv
+2025-08-11 23:44:42,726 - INFO - Loaded 36622 records from VA_cats.csv
+2025-08-11 23:44:42,843 - INFO - Loaded 14836 records from IL_cats.csv
+2025-08-11 23:44:42,894 - INFO - Loaded 6342 records from 89136_cats.csv
+2025-08-11 23:44:42,949 - INFO - Loaded 6218 records from 89048_cats.csv
+2025-08-11 23:44:44,021 - INFO - Loaded 143311 records from NJ_cats.csv
+2025-08-11 23:44:44,092 - INFO - Loaded 3294 records from 89415_cats.csv
+2025-08-11 23:44:44,205 - INFO - Loaded 15552 records from CA_cats.csv
+2025-08-11 23:44:44,211 - INFO - Loaded 426 records from SD_cats.csv
+2025-08-11 23:44:44,266 - INFO - Loaded 6752 records from 89436_cats.csv
+2025-08-11 23:44:44,291 - INFO - Loaded 3108 records from 89408_cats.csv
+2025-08-11 23:44:45,155 - INFO - Loaded 117834 records from CT_cats.csv
+2025-08-11 23:44:45,204 - INFO - Loaded 6342 records from 89120_cats.csv
+2025-08-11 23:44:45,254 - INFO - Loaded 6342 records from 89121_cats.csv
+2025-08-11 23:44:45,403 - INFO - Loaded 19786 records from VT_cats.csv
+2025-08-11 23:44:45,986 - INFO - Loaded 80485 records from PA_cats.csv
+2025-08-11 23:44:46,050 - INFO - Loaded 8158 records from 89431_cats.csv
+2025-08-11 23:44:46,164 - INFO - Loaded 14930 records from SC_cats.csv
+2025-08-11 23:44:46,220 - INFO - Loaded 7391 records from 89024_cats.csv
+2025-08-11 23:44:46,282 - INFO - Loaded 8219 records from 89506_cats.csv
+2025-08-11 23:44:46,330 - INFO - Loaded 6342 records from 89052_cats.csv
+2025-08-11 23:44:46,385 - INFO - Loaded 6342 records from 89113_cats.csv
+2025-08-11 23:44:46,426 - INFO - Loaded 4844 records from 89447_cats.csv
+2025-08-11 23:44:46,570 - INFO - Loaded 17808 records from WA_cats.csv
+2025-08-11 23:44:46,773 - INFO - Loaded 27669 records from NY_cats.csv
+2025-08-11 23:44:46,827 - INFO - Loaded 6871 records from 89011_cats.csv
+2025-08-11 23:44:46,966 - INFO - Loaded 17790 records from TN_cats.csv
+2025-08-11 23:44:47,023 - INFO - Loaded 6342 records from 89119_cats.csv
+2025-08-11 23:44:47,076 - INFO - Loaded 6342 records from 89118_cats.csv
+2025-08-11 23:44:47,200 - INFO - Loaded 17351 records from OK_cats.csv
+2025-08-11 23:44:47,381 - INFO - Loaded 16259 records from 89701_cats.csv
+2025-08-11 23:44:47,431 - INFO - Loaded 6342 records from 89032_cats.csv
+2025-08-11 23:44:47,560 - INFO - Loaded 17620 records from IA_cats.csv
+2025-08-11 23:44:47,744 - INFO - Loaded 24728 records from MI_cats.csv
+2025-08-11 23:44:47,800 - INFO - Loaded 6342 records from 89104_cats.csv
+2025-08-11 23:44:47,944 - INFO - Loaded 18401 records from 89450_cats.csv
+2025-08-11 23:44:48,087 - INFO - Loaded 18402 records from 89451_cats.csv
+2025-08-11 23:44:48,154 - INFO - Loaded 8691 records from 89511_cats.csv
+2025-08-11 23:44:48,208 - INFO - Loaded 6341 records from 89130_cats.csv
+2025-08-11 23:44:48,256 - INFO - Loaded 6135 records from 89131_cats.csv
+2025-08-11 23:44:48,312 - INFO - Loaded 6342 records from 89147_cats.csv
+2025-08-11 23:44:48,361 - INFO - Loaded 6342 records from 89146_cats.csv
+2025-08-11 23:44:48,387 - INFO - Loaded 3428 records from NM_cats.csv
+2025-08-11 23:44:48,678 - INFO - Loaded 44995 records from AZ_cats.csv
+2025-08-11 23:44:48,686 - INFO - Loaded 638 records from AK_cats.csv
+2025-08-11 23:44:48,737 - INFO - Loaded 6341 records from 89123_cats.csv
+2025-08-11 23:44:48,795 - INFO - Loaded 6341 records from 89122_cats.csv
+2025-08-11 23:44:48,804 - INFO - Loaded 1102 records from HI_cats.csv
+2025-08-11 23:44:48,876 - INFO - Loaded 12894 records from LA_cats.csv
+2025-08-11 23:44:48,927 - INFO - Loaded 6340 records from 89015_cats.csv
+2025-08-11 23:44:48,978 - INFO - Loaded 6340 records from 89014_cats.csv
+2025-08-11 23:44:49,187 - INFO - Loaded 28560 records from FL_cats.csv
+2025-08-11 23:44:49,211 - INFO - Loaded 3227 records from MS_cats.csv
+2025-08-11 23:44:49,302 - INFO - Loaded 6826 records from 89434_cats.csv
+2025-08-11 23:44:49,349 - INFO - Loaded 6196 records from 89129_cats.csv
+2025-08-11 23:44:49,400 - INFO - Loaded 6341 records from 89128_cats.csv
+2025-08-11 23:44:49,462 - INFO - Loaded 8163 records from 89502_cats.csv
+2025-08-11 23:44:49,511 - INFO - Loaded 6342 records from 89117_cats.csv
+2025-08-11 23:44:49,562 - INFO - Loaded 6342 records from 89074_cats.csv
+2025-08-11 23:44:49,604 - INFO - Loaded 5058 records from 89429_cats.csv
+2025-08-11 23:44:50,163 - INFO - Loaded 77829 records from DE_cats.csv
+2025-08-11 23:44:50,178 - INFO - Loaded 1821 records from KS_cats.csv
+2025-08-11 23:44:50,386 - INFO - Loaded 30063 records from IN_cats.csv
+2025-08-11 23:44:50,543 - INFO - Loaded 18996 records from 89460_cats.csv
+2025-08-11 23:44:50,595 - INFO - Loaded 6342 records from 89134_cats.csv
+2025-08-11 23:44:50,644 - INFO - Loaded 6342 records from 89135_cats.csv
+2025-08-11 23:44:50,887 - INFO - Loaded 31555 records from NH_cats.csv
+2025-08-11 23:44:50,934 - INFO - Loaded 6135 records from 89143_cats.csv
+2025-08-11 23:44:50,942 - INFO - Loaded 441 records from ID_cats.csv
+2025-08-11 23:44:51,071 - INFO - Loaded 15646 records from 89704_cats.csv
+2025-08-11 23:44:51,279 - INFO - Loaded 29131 records from KY_cats.csv
+2025-08-11 23:44:51,408 - INFO - Loaded 17747 records from 89423_cats.csv
+2025-08-11 23:44:51,456 - INFO - Loaded 6342 records from 89101_cats.csv
+2025-08-11 23:44:51,508 - INFO - Loaded 6342 records from 89193_cats.csv
+2025-08-11 23:44:51,558 - INFO - Loaded 6340 records from 89009_cats.csv
+2025-08-11 23:44:51,605 - INFO - Loaded 6135 records from 89149_cats.csv
+2025-08-11 23:44:51,656 - INFO - Loaded 6342 records from 89148_cats.csv
+2025-08-11 23:44:51,839 - INFO - Loaded 26302 records from GA_cats.csv
+2025-08-11 23:44:52,121 - INFO - Loaded 35151 records from NC_cats.csv
+2025-08-11 23:44:52,942 - INFO - Loaded 76622 records from DC_cats.csv
+2025-08-11 23:44:53,349 - INFO - Loaded 54373 records from MA_cats.csv
+2025-08-11 23:44:53,367 - INFO - Loaded 2247 records from TX_cats.csv
+2025-08-11 23:44:53,483 - INFO - Loaded 15755 records from 89410_cats.csv
+2025-08-11 23:44:53,537 - INFO - Loaded 6342 records from 89145_cats.csv
+2025-08-11 23:44:53,641 - INFO - Loaded 13265 records from WV_cats.csv
+2025-08-11 23:44:53,772 - INFO - Loaded 16552 records from 89703_cats.csv
+2025-08-11 23:44:53,900 - INFO - Loaded 16480 records from 89702_cats.csv
+2025-08-11 23:44:53,953 - INFO - Loaded 6342 records from 89139_cats.csv
+2025-08-11 23:44:54,052 - INFO - Loaded 12704 records from CO_cats.csv
+2025-08-11 23:44:54,092 - INFO - Loaded 6107 records from AR_cats.csv
+2025-08-11 23:44:54,141 - INFO - Loaded 6342 records from 89107_cats.csv
+2025-08-11 23:44:54,177 - INFO - Loaded 5230 records from NE_cats.csv
+2025-08-11 23:44:54,186 - INFO - Loaded 1075 records from ND_cats.csv
+2025-08-11 23:44:54,248 - INFO - Loaded 8170 records from 89512_cats.csv
+2025-08-11 23:44:54,352 - INFO - Loaded 16231 records from AL_cats.csv
+2025-08-11 23:44:54,359 - INFO - Loaded 587 records from MT_cats.csv
+2025-08-11 23:44:54,742 - INFO - Loaded 54895 records from OH_cats.csv
+2025-08-11 23:44:54,765 - INFO - Loaded 2779 records from 89406_cats.csv
+2025-08-11 23:44:54,913 - INFO - Loaded 21201 records from WI_cats.csv
+2025-08-11 23:44:54,967 - INFO - Loaded 7418 records from 89027_cats.csv
+2025-08-11 23:44:55,035 - INFO - Loaded 4321 records from UT_cats.csv
+2025-08-11 23:44:55,037 - INFO - Loaded 1 records from 89445_cats.csv
+2025-08-11 23:44:55,086 - INFO - Loaded 6342 records from 89183_cats.csv
+2025-08-11 23:44:55,127 - INFO - Loaded 5835 records from 89019_cats.csv
+2025-08-11 23:44:56,854 - INFO - Removed 954923 duplicate records
+2025-08-11 23:45:05,038 - INFO - Combined file saved: cat/2025-08-11/adopted/all_adopted_cats.csv (872490 unique records)
+2025-08-11 23:45:05,640 - INFO - <------------------------ Data Collection Complete ------------------------>
