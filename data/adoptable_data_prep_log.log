@@ -1,0 +1,1157 @@
+Starting preprocessing of 'adoptable' cat data ₍^. .^₎⟆ ...
+
+✓ Data loaded successfully from cat/2025-08-11/adoptable/all_adoptable_cats.csv. Shape: (81057, 45)
+✓ Date columns converted successfully.
+✓ `days_in_shelter` column calculated successfully.
+✓ Color categories standardized successfully considering primary, secondary and tertiary colors.
+✓ 4157/30557 cats without colour initially have been imputed.
+✓ Final color column derived from cleaned and imputed colours successfully.
+✓ Processed data saved successfully to: cat/2025-08-11/adoptable/processed_adoptable_cats.csv.
+
+Preprocessing completed  ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ 
+
+Colour cleaning logs:
+
+
+------------ Colour Standardisation Mapping ------------
+White | Calico                                                                                       -> Calico
+Tabby (Orange / Red) | White                                                                         -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | White                                                                    -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Buff & White                                                             -> Tabby (Buff / Tan / Fawn)
+Orange & White | Tabby (Orange / Red)                                                                -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn)                 -> Tabby (Brown / Chocolate)
+Tabby (Leopard / Spotted) | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                 -> Tabby (Leopard / Spotted)
+White | Gray / Blue / Silver                                                                         -> Gray & White
+White | Buff / Tan / Fawn                                                                            -> Buff & White
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                     -> Tabby (Brown / Chocolate)
+White | Tabby (Gray / Blue / Silver)                                                                 -> Tabby (Gray / Blue / Silver)
+Lilac Point | Blue Point                                                                             -> Lilac Point
+Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                                             -> Tabby (Gray / Blue / Silver)
+Black | Black & White / Tuxedo                                                                       -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                                             -> Tabby (Brown / Chocolate)
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver)                                                 -> Tabby (Tiger Striped)
+Brown / Chocolate | White                                                                            -> Brown & White
+Black & White / Tuxedo | Gray / Blue / Silver                                                        -> Black & White / Tuxedo
+Tabby (Gray / Blue / Silver) | White                                                                 -> Tabby (Gray / Blue / Silver)
+Gray / Blue / Silver | Orange & White                                                                -> Gray & White
+Black | White                                                                                        -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                                                -> Tabby (Brown / Chocolate)
+Orange / Red | Tabby (Orange / Red) | Orange & White                                                 -> Tabby (Orange / Red)
+Brown / Chocolate | Black | Gray / Blue / Silver                                                     -> Brown / Chocolate
+Buff & White | Tabby (Brown / Chocolate)                                                             -> Tabby (Brown / Chocolate)
+Orange / Red | White                                                                                 -> Orange & White
+Black | Orange / Red                                                                                 -> Orange / Red
+Tabby (Leopard / Spotted) | White                                                                    -> Tabby (Leopard / Spotted)
+Chocolate Point | Cream / Ivory                                                                      -> Chocolate Point
+Gray / Blue / Silver | White                                                                         -> Gray & White
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver)                     -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Buff / Tan / Fawn                                                                -> Brown / Chocolate
+Black | White | Buff / Tan / Fawn                                                                    -> Black & White / Tuxedo
+Gray / Blue / Silver | Orange & White | Calico                                                       -> Calico
+Tabby (Buff / Tan / Fawn) | Dilute Tortoiseshell                                                     -> Dilute Tortoiseshell
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                                                -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Calico | Tabby (Brown / Chocolate)                                          -> Black & White / Tuxedo
+Orange & White | Orange / Red | White                                                                -> Orange & White
+White | Black                                                                                        -> Black & White / Tuxedo
+Gray / Blue / Silver | Buff / Tan / Fawn                                                             -> Gray / Blue / Silver
+Brown / Chocolate | Black                                                                            -> Brown / Chocolate
+White | Brown / Chocolate                                                                            -> Brown & White
+Brown / Chocolate | Orange / Red                                                                     -> Brown / Chocolate
+Buff / Tan / Fawn | White                                                                            -> Buff & White
+Orange / Red | Gray / Blue / Silver                                                                  -> Orange / Red
+Black | Buff & White                                                                                 -> Buff & White
+Tabby (Buff / Tan / Fawn) | Calico                                                                   -> Calico
+Tabby (Buff / Tan / Fawn) | White                                                                    -> Tabby (Buff / Tan / Fawn)
+White | Tabby (Brown / Chocolate)                                                                    -> Tabby (Brown / Chocolate)
+Dilute Calico | Blue Cream                                                                           -> Dilute Calico
+Calico | Tabby (Buff / Tan / Fawn)                                                                   -> Calico
+White | Tabby (Buff / Tan / Fawn)                                                                    -> Tabby (Buff / Tan / Fawn)
+White | Orange / Red                                                                                 -> Orange & White
+Buff / Tan / Fawn | Tabby (Buff / Tan / Fawn)                                                        -> Tabby (Buff / Tan / Fawn)
+Orange & White | Buff & White                                                                        -> Orange & White
+Buff & White | Cream / Ivory                                                                         -> Buff & White
+Calico | Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn)                                            -> Calico
+Black & White / Tuxedo | Gray & White                                                                -> Black & White / Tuxedo
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Tabby (Orange / Red)                         -> Tabby (Buff / Tan / Fawn)
+Gray / Blue / Silver | Black                                                                         -> Gray / Blue / Silver
+Gray / Blue / Silver | Tortoiseshell                                                                 -> Tortoiseshell
+Black | Gray / Blue / Silver                                                                         -> Gray / Blue / Silver
+Black | Brown / Chocolate                                                                            -> Brown / Chocolate
+Torbie | Calico                                                                                      -> Calico
+Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn)                                                     -> Tabby (Orange / Red)
+Black & White / Tuxedo | Black                                                                       -> Black & White / Tuxedo
+Black | Cream / Ivory                                                                                -> Cream / Ivory
+Black | Buff / Tan / Fawn                                                                            -> Buff / Tan / Fawn
+Buff & White | Buff / Tan / Fawn                                                                     -> Buff & White
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                                                    -> Tabby (Brown / Chocolate)
+Orange / Red | Orange & White | White                                                                -> Orange & White
+Calico | White | Torbie                                                                              -> Calico
+Black | White | Black & White / Tuxedo                                                               -> Black & White / Tuxedo
+Black & White / Tuxedo | Black | White                                                               -> Black & White / Tuxedo
+Buff / Tan / Fawn | Buff & White | Smoke                                                             -> Smoke
+Tabby (Brown / Chocolate) | Tortoiseshell | Calico                                                   -> Calico
+White | Black | Brown / Chocolate                                                                    -> Black & White / Tuxedo
+Tortoiseshell | Dilute Calico | Dilute Tortoiseshell                                                 -> Dilute Calico
+Tabby (Brown / Chocolate) | Calico                                                                   -> Calico
+White | Flame Point                                                                                  -> Flame Point
+Gray / Blue / Silver | Buff & White | Black                                                          -> Gray & White
+Gray / Blue / Silver | Gray & White                                                                  -> Gray & White
+Calico | White                                                                                       -> Calico
+Orange / Red | Tabby (Orange / Red)                                                                  -> Tabby (Orange / Red)
+Orange & White | White | Orange / Red                                                                -> Orange & White
+Tabby (Gray / Blue / Silver) | Black                                                                 -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate) | White                                     -> Tabby (Gray / Blue / Silver)
+Gray & White | Tabby (Gray / Blue / Silver)                                                          -> Tabby (Gray / Blue / Silver)
+Gray / Blue / Silver | Buff & White                                                                  -> Gray & White
+Buff & White | Tabby (Gray / Blue / Silver)                                                          -> Tabby (Gray / Blue / Silver)
+Buff & White | Buff / Tan / Fawn | Orange & White                                                    -> Buff & White
+Tabby (Gray / Blue / Silver) | Gray & White                                                          -> Tabby (Gray / Blue / Silver)
+Tabby (Orange / Red) | Orange & White | Orange / Red                                                 -> Tabby (Orange / Red)
+Tabby (Gray / Blue / Silver) | Gray / Blue / Silver                                                  -> Tabby (Gray / Blue / Silver)
+Buff & White | Buff / Tan / Fawn | Tabby (Buff / Tan / Fawn)                                         -> Tabby (Buff / Tan / Fawn)
+Orange / Red | Buff & White                                                                          -> Orange & White
+Dilute Tortoiseshell | Tortoiseshell                                                                 -> Dilute Tortoiseshell
+Tabby (Orange / Red) | Orange / Red                                                                  -> Tabby (Orange / Red)
+Dilute Calico | Dilute Tortoiseshell | Gray / Blue / Silver                                          -> Dilute Calico
+Gray & White | Gray / Blue / Silver | White                                                          -> Gray & White
+Torbie | Tabby (Buff / Tan / Fawn) | Tabby (Orange / Red)                                            -> Torbie
+Buff / Tan / Fawn | Buff & White                                                                     -> Buff & White
+Tabby (Orange / Red) | Orange & White | White                                                        -> Tabby (Orange / Red)
+Buff / Tan / Fawn | Orange & White | Buff & White                                                    -> Buff & White
+Gray & White | White | Gray / Blue / Silver                                                          -> Gray & White
+Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn)                                             -> Tabby (Gray / Blue / Silver)
+Buff & White | Buff / Tan / Fawn | White                                                             -> Buff & White
+Tabby (Brown / Chocolate) | Brown / Chocolate                                                        -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | Brown / Chocolate | Tabby (Gray / Blue / Silver)                         -> Tabby (Brown / Chocolate)
+Tabby (Gray / Blue / Silver) | Gray / Blue / Silver | Gray & White                                   -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Gray & White | Gray / Blue / Silver                                   -> Tabby (Gray / Blue / Silver)
+White | Black | Black & White / Tuxedo                                                               -> Black & White / Tuxedo
+Calico | Tortoiseshell | Brown / Chocolate                                                           -> Calico
+Gray / Blue / Silver | Gray & White | Tabby (Gray / Blue / Silver)                                   -> Tabby (Gray / Blue / Silver)
+Gray / Blue / Silver | Brown / Chocolate                                                             -> Gray / Blue / Silver
+Tortoiseshell | Tabby (Buff / Tan / Fawn)                                                            -> Tortoiseshell
+Calico | Black                                                                                       -> Calico
+Black | Black & White / Tuxedo | White                                                               -> Black & White / Tuxedo
+Buff & White | White | Buff / Tan / Fawn                                                             -> Buff & White
+Buff & White | Buff / Tan / Fawn | Tabby (Orange / Red)                                              -> Tabby (Orange / Red)
+Tabby (Orange / Red) | Orange / Red | Orange & White                                                 -> Tabby (Orange / Red)
+Tabby (Gray / Blue / Silver) | Gray & White | White                                                  -> Tabby (Gray / Blue / Silver)
+Dilute Calico | Calico                                                                               -> Dilute Calico
+Cream / Ivory | Brown / Chocolate                                                                    -> Cream / Ivory
+Orange / Red | Orange & White | Tabby (Orange / Red)                                                 -> Tabby (Orange / Red)
+Black | Tabby (Gray / Blue / Silver)                                                                 -> Tabby (Gray / Blue / Silver)
+Tabby (Orange / Red) | Buff & White                                                                  -> Tabby (Orange / Red)
+White | Gray & White                                                                                 -> White
+Torbie | Tortoiseshell                                                                               -> Tortoiseshell
+Black | Gray & White                                                                                 -> Gray & White
+Gray & White | Orange & White                                                                        -> Gray & White
+Tabby (Buff / Tan / Fawn) | Tabby (Orange / Red)                                                     -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Brown / Chocolate | Buff / Tan / Fawn                                    -> Tabby (Buff / Tan / Fawn)
+Calico | Tortoiseshell | Lilac Point                                                                 -> Lilac Point
+Tortoiseshell | Calico                                                                               -> Calico
+Dilute Calico | Gray & White                                                                         -> Dilute Calico
+Tabby (Brown / Chocolate) | Tabby (Orange / Red) | Torbie                                            -> Torbie
+Orange / Red | Black                                                                                 -> Orange / Red
+Buff / Tan / Fawn | Tabby (Gray / Blue / Silver)                                                     -> Tabby (Gray / Blue / Silver)
+Orange & White | Orange / Red                                                                        -> Orange & White
+Buff / Tan / Fawn | Brown / Chocolate                                                                -> Buff / Tan / Fawn
+Torbie | Tabby (Brown / Chocolate)                                                                   -> Torbie
+Buff & White | Buff / Tan / Fawn | Brown / Chocolate                                                 -> Buff & White
+Tabby (Buff / Tan / Fawn) | Buff / Tan / Fawn                                                        -> Tabby (Buff / Tan / Fawn)
+Black | Tabby (Brown / Chocolate)                                                                    -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Black                                                                    -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | White | Tabby (Brown / Chocolate)                                           -> Black & White / Tuxedo
+Buff & White | Black                                                                                 -> Buff & White
+Black | Tortoiseshell                                                                                -> Tortoiseshell
+Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate) | Black                                     -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Black | White                                                         -> Tabby (Gray / Blue / Silver)
+Tabby (Tiger Striped) | White                                                                        -> Tabby (Tiger Striped)
+Cream / Ivory | Gray / Blue / Silver                                                                 -> Cream / Ivory
+Torbie | Orange / Red                                                                                -> Torbie
+Torbie | White                                                                                       -> Torbie
+Dilute Tortoiseshell | Torbie | Orange / Red                                                         -> Dilute Tortoiseshell
+Tabby (Brown / Chocolate) | Buff & White | White                                                     -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Tabby (Orange / Red) | Orange / Red                                              -> Tabby (Orange / Red)
+Black | Tabby (Tiger Striped)                                                                        -> Tabby (Tiger Striped)
+Tabby (Leopard / Spotted) | Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                        -> Tabby (Leopard / Spotted)
+Tortoiseshell | Dilute Tortoiseshell                                                                 -> Dilute Tortoiseshell
+Black & White / Tuxedo | Buff / Tan / Fawn | White                                                   -> Black & White / Tuxedo
+Black & White / Tuxedo | Gray & White | Tabby (Buff / Tan / Fawn)                                    -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | White                                        -> Tabby (Brown / Chocolate)
+Gray / Blue / Silver | Gray & White | White                                                          -> Gray & White
+Dilute Tortoiseshell | Gray / Blue / Silver | Buff / Tan / Fawn                                      -> Dilute Tortoiseshell
+Dilute Tortoiseshell | Buff / Tan / Fawn | Gray / Blue / Silver                                      -> Dilute Tortoiseshell
+Black | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                                     -> Tabby (Brown / Chocolate)
+Orange & White | Tortoiseshell | White                                                               -> Tortoiseshell
+Brown / Chocolate | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                            -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Tabby (Brown / Chocolate) | White                                                -> Tabby (Brown / Chocolate)
+Orange & White | Orange / Red | Tabby (Orange / Red)                                                 -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Brown / Chocolate                            -> Tabby (Brown / Chocolate)
+Black | Calico | Tabby (Buff / Tan / Fawn)                                                           -> Calico
+Tortoiseshell | Black | Orange / Red                                                                 -> Tortoiseshell
+Gray & White | White                                                                                 -> Gray & White
+Tabby (Tiger Striped) | White | Tabby (Brown / Chocolate)                                            -> Tabby (Tiger Striped)
+Buff / Tan / Fawn | Orange / Red                                                                     -> Buff / Tan / Fawn
+Tabby (Brown / Chocolate) | Black                                                                    -> Tabby (Brown / Chocolate)
+White | Black & White / Tuxedo | Black                                                               -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Black & White / Tuxedo                                                   -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped)                        -> Tabby (Brown / Chocolate)
+Dilute Calico | Tabby (Gray / Blue / Silver)                                                         -> Dilute Calico
+Black & White / Tuxedo | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                           -> Black & White / Tuxedo
+Orange & White | Black                                                                               -> Orange & White
+Orange / Red | Orange & White                                                                        -> Orange & White
+Blue Point | Buff / Tan / Fawn | Chocolate Point                                                     -> Blue Point
+Gray & White | Tabby (Gray / Blue / Silver) | Gray / Blue / Silver                                   -> Tabby (Gray / Blue / Silver)
+Dilute Calico | Calico | White                                                                       -> Dilute Calico
+White | Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn)                                     -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Tabby (Orange / Red)                         -> Tabby (Brown / Chocolate)
+Orange & White | Tabby (Brown / Chocolate)                                                           -> Tabby (Brown / Chocolate)
+Cream / Ivory | White                                                                                -> Buff & White
+Black & White / Tuxedo | Orange / Red | Orange & White                                               -> Black & White / Tuxedo
+Calico | Cream / Ivory                                                                               -> Calico
+Tabby (Gray / Blue / Silver) | White | Black                                                         -> Tabby (Gray / Blue / Silver)
+Calico | Tortoiseshell | Torbie                                                                      -> Calico
+Gray & White | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                              -> Tabby (Brown / Chocolate)
+Tabby (Orange / Red) | Orange & White                                                                -> Tabby (Orange / Red)
+Cream / Ivory | Buff & White                                                                         -> Buff & White
+White | Tabby (Tiger Striped)                                                                        -> Tabby (Tiger Striped)
+Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                                                    -> Tabby (Tiger Striped)
+Tabby (Buff / Tan / Fawn) | Buff & White | White                                                     -> Tabby (Buff / Tan / Fawn)
+White | Buff & White | Tabby (Brown / Chocolate)                                                     -> Tabby (Brown / Chocolate)
+Tabby (Leopard / Spotted) | Torbie | White                                                           -> Torbie
+Calico | Torbie | Orange / Red                                                                       -> Calico
+Black | Buff & White | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Gray / Blue / Silver | Blue Point                                     -> Blue Point
+Calico | Tabby (Orange / Red) | White                                                                -> Calico
+Tabby (Leopard / Spotted) | Tabby (Orange / Red)                                                     -> Tabby (Leopard / Spotted)
+Buff / Tan / Fawn | Buff & White | Calico                                                            -> Calico
+Lilac Point | Gray & White | Tortoiseshell                                                           -> Lilac Point
+Tabby (Tiger Striped) | Black                                                                        -> Tabby (Tiger Striped)
+Tabby (Gray / Blue / Silver) | White | Gray / Blue / Silver                                          -> Tabby (Gray / Blue / Silver)
+Buff / Tan / Fawn | Cream / Ivory | Orange / Red                                                     -> Buff / Tan / Fawn
+Black | Lilac Point                                                                                  -> Lilac Point
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                        -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Orange & White | Tabby (Orange / Red)                                       -> Black & White / Tuxedo
+Gray & White | Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped)                                     -> Tabby (Buff / Tan / Fawn)
+Tabby (Orange / Red) | Tabby (Brown / Chocolate)                                                     -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Tortoiseshell                                    -> Tortoiseshell
+Dilute Tortoiseshell | Calico | Gray / Blue / Silver                                                 -> Dilute Calico
+Buff & White | White                                                                                 -> Buff & White
+White | Orange & White                                                                               -> White
+White | Buff & White | Cream Point                                                                   -> Cream Point
+White | Black & White / Tuxedo                                                                       -> Black & White / Tuxedo
+Gray & White | Gray / Blue / Silver                                                                  -> Gray & White
+Chocolate Point | Blue Point                                                                         -> Chocolate Point
+Seal Point | Cream Point | Cream / Ivory                                                             -> Seal Point
+Tortoiseshell | Orange & White                                                                       -> Tortoiseshell
+Tabby (Gray / Blue / Silver) | Buff / Tan / Fawn                                                     -> Tabby (Gray / Blue / Silver)
+Brown / Chocolate | Tabby (Brown / Chocolate)                                                        -> Tabby (Brown / Chocolate)
+Black & White / Tuxedo | Calico                                                                      -> Black & White / Tuxedo
+Brown / Chocolate | Black | Buff / Tan / Fawn                                                        -> Brown / Chocolate
+Tortoiseshell | Buff / Tan / Fawn                                                                    -> Tortoiseshell
+Black & White / Tuxedo | Orange & White                                                              -> Black & White / Tuxedo
+Gray & White | Gray / Blue / Silver | Tabby (Gray / Blue / Silver)                                   -> Tabby (Gray / Blue / Silver)
+Tabby (Tiger Striped) | Cream / Ivory                                                                -> Tabby (Tiger Striped)
+Black & White / Tuxedo | Black | Tabby (Tiger Striped)                                               -> Black & White / Tuxedo
+Tabby (Gray / Blue / Silver) | Tabby (Orange / Red)                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Buff & White                                 -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Black & White / Tuxedo                                                   -> Black & White / Tuxedo
+Seal Point | Cream / Ivory                                                                           -> Seal Point
+Seal Point | Torbie                                                                                  -> Seal Point
+Calico | Gray & White                                                                                -> Calico
+Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped)                                                    -> Tabby (Buff / Tan / Fawn)
+Tabby (Gray / Blue / Silver) | White | Orange & White                                                -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | White | Buff / Tan / Fawn                                             -> Tabby (Gray / Blue / Silver)
+Tabby (Tiger Striped) | Tortoiseshell                                                                -> Tortoiseshell
+Tabby (Orange / Red) | Black & White / Tuxedo | Orange & White                                       -> Black & White / Tuxedo
+Orange & White | Buff / Tan / Fawn                                                                   -> Buff & White
+Black & White / Tuxedo | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                       -> Black & White / Tuxedo
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                          -> Tabby (Gray / Blue / Silver)
+Gray & White | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                                  -> Tabby (Gray / Blue / Silver)
+Tortoiseshell | Tabby (Gray / Blue / Silver)                                                         -> Tortoiseshell
+Orange & White | Tabby (Gray / Blue / Silver)                                                        -> Tabby (Gray / Blue / Silver)
+Tortoiseshell | Gray / Blue / Silver                                                                 -> Tortoiseshell
+Orange / Red | Buff / Tan / Fawn | Tabby (Orange / Red)                                              -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Gray & White                              -> Tabby (Brown / Chocolate)
+Buff / Tan / Fawn | Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn)                                 -> Tabby (Orange / Red)
+Calico | Tortoiseshell                                                                               -> Calico
+Tabby (Gray / Blue / Silver) | Calico                                                                -> Calico
+Black & White / Tuxedo | Tabby (Buff / Tan / Fawn)                                                   -> Black & White / Tuxedo
+Orange & White | Tabby (Orange / Red) | Orange / Red                                                 -> Tabby (Orange / Red)
+Dilute Calico | White                                                                                -> Dilute Calico
+Black & White / Tuxedo | Dilute Calico                                                               -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | White                                     -> Tabby (Brown / Chocolate)
+Tortoiseshell | Brown / Chocolate                                                                    -> Tortoiseshell
+White | Brown / Chocolate | Buff / Tan / Fawn                                                        -> Buff & White
+Tabby (Orange / Red) | Orange / Red | Tabby (Buff / Tan / Fawn)                                      -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver)                 -> Tabby (Brown / Chocolate)
+Black | Black & White / Tuxedo | Smoke                                                               -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Torbie                                       -> Torbie
+Buff / Tan / Fawn | Brown / Chocolate | White                                                        -> Buff & White
+White | Gray & White | Gray / Blue / Silver                                                          -> Gray & White
+Tabby (Gray / Blue / Silver) | Dilute Tortoiseshell                                                  -> Dilute Tortoiseshell
+White | Buff & White | Cream / Ivory                                                                 -> Buff & White
+Blue Point | Black                                                                                   -> Blue Point
+Black & White / Tuxedo | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                        -> Black & White / Tuxedo
+Seal Point | Brown / Chocolate | White                                                               -> Seal Point
+Black | Brown / Chocolate | Tabby (Gray / Blue / Silver)                                             -> Tabby (Gray / Blue / Silver)
+Calico | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                                       -> Calico
+Tabby (Brown / Chocolate) | Calico | Tabby (Buff / Tan / Fawn)                                       -> Calico
+Calico | Torbie | Tabby (Orange / Red)                                                               -> Calico
+Tabby (Tiger Striped) | Tabby (Brown / Chocolate) | Brown / Chocolate                                -> Tabby (Tiger Striped)
+Buff / Tan / Fawn | Gray / Blue / Silver                                                             -> Buff / Tan / Fawn
+Tabby (Gray / Blue / Silver) | Dilute Calico | Dilute Tortoiseshell                                  -> Dilute Calico
+Black | Orange & White                                                                               -> Orange & White
+Calico | Dilute Calico | Tortoiseshell                                                               -> Dilute Calico
+White | Gray & White | Dilute Calico                                                                 -> Dilute Calico
+Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn)                                                    -> Tabby (Tiger Striped)
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | White                                            -> Tabby (Brown / Chocolate)
+Black | Tabby (Buff / Tan / Fawn)                                                                    -> Tabby (Buff / Tan / Fawn)
+Buff & White | Black | Brown / Chocolate                                                             -> Brown & White
+Torbie | Dilute Tortoiseshell                                                                        -> Dilute Tortoiseshell
+Tabby (Tiger Striped) | Torbie                                                                       -> Torbie
+Tabby (Buff / Tan / Fawn) | White | Tabby (Brown / Chocolate)                                        -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Torbie                                       -> Torbie
+Buff / Tan / Fawn | Gray / Blue / Silver | Orange / Red                                              -> Buff / Tan / Fawn
+Gray & White | Gray / Blue / Silver | Black                                                          -> Gray & White
+Orange & White | Buff & White | Buff / Tan / Fawn                                                    -> Buff & White
+Tabby (Tiger Striped) | Tabby (Brown / Chocolate) | White                                            -> Tabby (Tiger Striped)
+Dilute Tortoiseshell | Tortoiseshell | Dilute Calico                                                 -> Dilute Calico
+Blue Point | Buff & White | Lilac Point                                                              -> Blue Point
+Chocolate Point | Seal Point | Brown / Chocolate                                                     -> Chocolate Point
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Chocolate Point                           -> Chocolate Point
+Tabby (Brown / Chocolate) | White | Tabby (Gray / Blue / Silver)                                     -> Tabby (Brown / Chocolate)
+Tortoiseshell | Black                                                                                -> Tortoiseshell
+Tabby (Buff / Tan / Fawn) | Dilute Calico | Lilac Point                                              -> Lilac Point
+Orange & White | Calico | Buff & White                                                               -> Calico
+Black & White / Tuxedo | White | Black                                                               -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Buff & White                                                             -> Tabby (Brown / Chocolate)
+Tabby (Gray / Blue / Silver) | White | Orange / Red                                                  -> Tabby (Gray / Blue / Silver)
+Buff & White | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                                 -> Tabby (Brown / Chocolate)
+Torbie | White | Tabby (Gray / Blue / Silver)                                                        -> Torbie
+Black | Gray / Blue / Silver | Gray & White                                                          -> Gray & White
+Tabby (Brown / Chocolate) | Torbie                                                                   -> Torbie
+Buff / Tan / Fawn | White | Buff & White                                                             -> Buff & White
+White | Orange / Red | Orange & White                                                                -> Orange & White
+Tabby (Orange / Red) | Gray & White | Orange & White                                                 -> Tabby (Orange / Red)
+Tabby (Buff / Tan / Fawn) | Torbie | Brown / Chocolate                                               -> Torbie
+Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped) | White                                            -> Tabby (Buff / Tan / Fawn)
+Calico | Dilute Calico                                                                               -> Dilute Calico
+Black & White / Tuxedo | Tabby (Brown / Chocolate)                                                   -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Orange / Red                                                             -> Tabby (Brown / Chocolate)
+Orange / Red | Tabby (Buff / Tan / Fawn)                                                             -> Tabby (Buff / Tan / Fawn)
+Tabby (Gray / Blue / Silver) | White | Gray & White                                                  -> Tabby (Gray / Blue / Silver)
+Brown / Chocolate | Calico                                                                           -> Calico
+Black & White / Tuxedo | Black | Tabby (Brown / Chocolate)                                           -> Black & White / Tuxedo
+Black & White / Tuxedo | Tortoiseshell | Tabby (Gray / Blue / Silver)                                -> Black & White / Tuxedo
+Brown / Chocolate | Gray / Blue / Silver                                                             -> Brown / Chocolate
+Black & White / Tuxedo | Tabby (Leopard / Spotted) | Brown / Chocolate                               -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Calico | Tabby (Gray / Blue / Silver)                                    -> Calico
+Buff / Tan / Fawn | Dilute Calico                                                                    -> Dilute Calico
+Tabby (Leopard / Spotted) | Tabby (Tiger Striped)                                                    -> Tabby (Leopard / Spotted)
+Dilute Calico | Tabby (Gray / Blue / Silver) | White                                                 -> Dilute Calico
+Buff / Tan / Fawn | Calico                                                                           -> Calico
+Brown / Chocolate | White | Tabby (Brown / Chocolate)                                                -> Tabby (Brown / Chocolate)
+Torbie | Orange / Red | Tabby (Brown / Chocolate)                                                    -> Torbie
+White | Black | Orange / Red                                                                         -> Black & White / Tuxedo
+Gray / Blue / Silver | Blue Cream                                                                    -> Gray / Blue / Silver
+Calico | Tabby (Brown / Chocolate)                                                                   -> Calico
+Buff / Tan / Fawn | Black & White / Tuxedo | Calico                                                  -> Black & White / Tuxedo
+Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn) | Buff / Tan / Fawn                                 -> Tabby (Orange / Red)
+Torbie | Dilute Tortoiseshell | Tabby (Brown / Chocolate)                                            -> Dilute Tortoiseshell
+Gray / Blue / Silver | Orange / Red                                                                  -> Gray / Blue / Silver
+White | Gray & White | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Gray / Blue / Silver)
+White | Tabby (Orange / Red)                                                                         -> Tabby (Orange / Red)
+Black | Smoke                                                                                        -> Smoke
+Gray / Blue / Silver | Calico                                                                        -> Calico
+Calico | Torbie                                                                                      -> Calico
+Tabby (Buff / Tan / Fawn) | Orange / Red                                                             -> Tabby (Buff / Tan / Fawn)
+Buff & White | Black | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Gray / Blue / Silver)
+Torbie | Tabby (Brown / Chocolate) | Calico                                                          -> Calico
+Tortoiseshell | White                                                                                -> Tortoiseshell
+Tabby (Brown / Chocolate) | Tabby (Orange / Red)                                                     -> Tabby (Brown / Chocolate)
+Black & White / Tuxedo | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                    -> Black & White / Tuxedo
+Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate) | Black & White / Tuxedo                    -> Black & White / Tuxedo
+Tabby (Gray / Blue / Silver) | Black & White / Tuxedo | Tabby (Brown / Chocolate)                    -> Black & White / Tuxedo
+Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                 -> Tabby (Buff / Tan / Fawn)
+White | Gray / Blue / Silver | Tabby (Buff / Tan / Fawn)                                             -> Tabby (Buff / Tan / Fawn)
+White | Dilute Tortoiseshell                                                                         -> Dilute Tortoiseshell
+Buff & White | Orange / Red                                                                          -> Orange & White
+Tabby (Brown / Chocolate) | White | Brown / Chocolate                                                -> Tabby (Brown / Chocolate)
+Tabby (Gray / Blue / Silver) | Orange / Red                                                          -> Tabby (Gray / Blue / Silver)
+Black & White / Tuxedo | Orange / Red                                                                -> Black & White / Tuxedo
+Tabby (Tiger Striped) | Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn)                             -> Tabby (Tiger Striped)
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Brown / Chocolate                         -> Tabby (Brown / Chocolate)
+Gray & White | Tabby (Gray / Blue / Silver) | White                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Brown / Chocolate | White                                                -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver)                                             -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Tabby (Brown / Chocolate) | White                                           -> Black & White / Tuxedo
+Torbie | Tortoiseshell | Tabby (Brown / Chocolate)                                                   -> Tortoiseshell
+Tabby (Gray / Blue / Silver) | White | Tabby (Brown / Chocolate)                                     -> Tabby (Gray / Blue / Silver)
+Buff / Tan / Fawn | Tabby (Buff / Tan / Fawn) | Buff & White                                         -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Buff & White | Buff / Tan / Fawn                                         -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                 -> Tabby (Buff / Tan / Fawn)
+Gray / Blue / Silver | Cream / Ivory                                                                 -> Gray / Blue / Silver
+Tabby (Orange / Red) | Tabby (Brown / Chocolate) | Orange / Red                                      -> Tabby (Orange / Red)
+Tabby (Orange / Red) | Calico                                                                        -> Calico
+Gray / Blue / Silver | Tabby (Brown / Chocolate)                                                     -> Tabby (Brown / Chocolate)
+Gray & White | Black & White / Tuxedo                                                                -> Black & White / Tuxedo
+Calico | Torbie | Dilute Calico                                                                      -> Dilute Calico
+White | Brown / Chocolate | Tabby (Brown / Chocolate)                                                -> Tabby (Brown / Chocolate)
+Black & White / Tuxedo | Gray & White | Tabby (Brown / Chocolate)                                    -> Black & White / Tuxedo
+Lilac Point | Torbie                                                                                 -> Lilac Point
+Buff / Tan / Fawn | Cream / Ivory                                                                    -> Buff / Tan / Fawn
+Orange / Red | Buff / Tan / Fawn                                                                     -> Orange / Red
+Black & White / Tuxedo | Black | Buff & White                                                        -> Black & White / Tuxedo
+Black | Dilute Tortoiseshell                                                                         -> Dilute Tortoiseshell
+Flame Point | Black | Buff / Tan / Fawn                                                              -> Flame Point
+White | Black | Smoke                                                                                -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Tabby (Leopard / Spotted)                        -> Tabby (Brown / Chocolate)
+Dilute Tortoiseshell | Dilute Calico | Calico                                                        -> Dilute Calico
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Buff / Tan / Fawn                            -> Tabby (Brown / Chocolate)
+Tabby (Orange / Red) | Buff / Tan / Fawn                                                             -> Tabby (Orange / Red)
+White | Dilute Calico                                                                                -> Dilute Calico
+Buff / Tan / Fawn | Black                                                                            -> Buff / Tan / Fawn
+Tabby (Brown / Chocolate) | Tabby (Orange / Red) | Tortoiseshell                                     -> Tortoiseshell
+Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                     -> Tabby (Buff / Tan / Fawn)
+Brown / Chocolate | Cream / Ivory                                                                    -> Brown / Chocolate
+Dilute Calico | Gray / Blue / Silver                                                                 -> Dilute Calico
+Gray & White | Tabby (Brown / Chocolate)                                                             -> Tabby (Brown / Chocolate)
+Calico | Gray / Blue / Silver                                                                        -> Calico
+Calico | Tabby (Orange / Red)                                                                        -> Calico
+Brown / Chocolate | Buff & White                                                                     -> Brown & White
+Dilute Tortoiseshell | Gray / Blue / Silver                                                          -> Dilute Tortoiseshell
+Brown / Chocolate | Tabby (Tiger Striped) | Buff & White                                             -> Tabby (Tiger Striped)
+Gray / Blue / Silver | Torbie | Dilute Tortoiseshell                                                 -> Dilute Tortoiseshell
+Brown / Chocolate | Torbie                                                                           -> Torbie
+Dilute Calico | Torbie                                                                               -> Dilute Calico
+Flame Point | Buff / Tan / Fawn                                                                      -> Flame Point
+Tabby (Tiger Striped) | Calico                                                                       -> Calico
+Buff & White | Dilute Calico                                                                         -> Dilute Calico
+Dilute Calico | Tabby (Brown / Chocolate)                                                            -> Dilute Calico
+Brown / Chocolate | Tabby (Buff / Tan / Fawn)                                                        -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Torbie                                                                   -> Torbie
+Tabby (Brown / Chocolate) | Brown / Chocolate | Torbie                                               -> Torbie
+Tabby (Buff / Tan / Fawn) | Brown / Chocolate                                                        -> Tabby (Buff / Tan / Fawn)
+Buff & White | Gray / Blue / Silver                                                                  -> Gray & White
+Orange / Red | Brown / Chocolate                                                                     -> Orange / Red
+Black & White / Tuxedo | White                                                                       -> Black & White / Tuxedo
+Dilute Tortoiseshell | Tabby (Gray / Blue / Silver)                                                  -> Dilute Tortoiseshell
+Black & White / Tuxedo | Calico | Tabby (Buff / Tan / Fawn)                                          -> Black & White / Tuxedo
+White | Gray & White | Buff / Tan / Fawn                                                             -> Buff & White
+Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn) | White                                     -> Tabby (Gray / Blue / Silver)
+Black & White / Tuxedo | Tortoiseshell | Tabby (Brown / Chocolate)                                   -> Black & White / Tuxedo
+Blue Point | White                                                                                   -> Blue Point
+Seal Point | Gray & White                                                                            -> Seal Point
+Orange & White | Tabby (Orange / Red) | White                                                        -> Tabby (Orange / Red)
+Torbie | Tabby (Buff / Tan / Fawn)                                                                   -> Torbie
+Torbie | Tortoiseshell | Tabby (Buff / Tan / Fawn)                                                   -> Tortoiseshell
+Calico | Orange & White                                                                              -> Calico
+Buff / Tan / Fawn | Tabby (Orange / Red)                                                             -> Tabby (Orange / Red)
+Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                     -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                     -> Tabby (Gray / Blue / Silver)
+White | Black | Gray / Blue / Silver                                                                 -> Black & White / Tuxedo
+Buff / Tan / Fawn | Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn)                                -> Tabby (Tiger Striped)
+White | Gray / Blue / Silver | Tabby (Brown / Chocolate)                                             -> Tabby (Brown / Chocolate)
+White | Tabby (Buff / Tan / Fawn) | Black                                                            -> Tabby (Buff / Tan / Fawn)
+Gray / Blue / Silver | Dilute Tortoiseshell | Buff & White                                           -> Dilute Tortoiseshell
+Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped)                     -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Tabby (Leopard / Spotted) | Tabby (Brown / Chocolate)                 -> Tabby (Gray / Blue / Silver)
+Calico | White | Dilute Tortoiseshell                                                                -> Dilute Calico
+Tabby (Brown / Chocolate) | Orange & White                                                           -> Tabby (Brown / Chocolate)
+Gray & White | Smoke                                                                                 -> Smoke
+Orange / Red | Cream / Ivory                                                                         -> Orange / Red
+Tortoiseshell | Torbie                                                                               -> Tortoiseshell
+White | Tabby (Gray / Blue / Silver) | Black                                                         -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | White | Tabby (Tiger Striped)                                         -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                                                 -> Tabby (Gray / Blue / Silver)
+White | Gray / Blue / Silver | Gray & White                                                          -> Gray & White
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped) | Buff / Tan / Fawn                             -> Tabby (Gray / Blue / Silver)
+Cream Point | Orange & White                                                                         -> Cream Point
+Tabby (Brown / Chocolate) | Brown / Chocolate | Tabby (Tiger Striped)                                -> Tabby (Brown / Chocolate)
+Black & White / Tuxedo | Brown / Chocolate | Tabby (Brown / Chocolate)                               -> Black & White / Tuxedo
+Black | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                                         -> Tabby (Gray / Blue / Silver)
+Calico | Orange / Red                                                                                -> Calico
+Black | Tabby (Brown / Chocolate) | White                                                            -> Tabby (Brown / Chocolate)
+Tabby (Orange / Red) | White | Tabby (Brown / Chocolate)                                             -> Tabby (Orange / Red)
+Buff / Tan / Fawn | Orange & White                                                                   -> Buff & White
+Buff & White | Brown / Chocolate                                                                     -> Brown & White
+Tabby (Gray / Blue / Silver) | Gray / Blue / Silver | White                                          -> Tabby (Gray / Blue / Silver)
+Tabby (Leopard / Spotted) | Tabby (Brown / Chocolate)                                                -> Tabby (Leopard / Spotted)
+Tortoiseshell | Torbie | Tabby (Tiger Striped)                                                       -> Tortoiseshell
+White | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                                            -> Tabby (Brown / Chocolate)
+Flame Point | Cream / Ivory                                                                          -> Flame Point
+Tortoiseshell | Tabby (Tiger Striped)                                                                -> Tortoiseshell
+Black & White / Tuxedo | Black | Gray / Blue / Silver                                                -> Black & White / Tuxedo
+Tabby (Orange / Red) | Brown / Chocolate                                                             -> Tabby (Orange / Red)
+Buff / Tan / Fawn | Orange / Red | Tabby (Orange / Red)                                              -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tortoiseshell                                                            -> Tortoiseshell
+Dilute Tortoiseshell | Gray / Blue / Silver | Orange / Red                                           -> Dilute Tortoiseshell
+Tortoiseshell | Tabby (Brown / Chocolate)                                                            -> Tortoiseshell
+Tabby (Tiger Striped) | Brown / Chocolate                                                            -> Tabby (Tiger Striped)
+Tabby (Orange / Red) | Torbie                                                                        -> Torbie
+Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                     -> Tabby (Tiger Striped)
+Buff & White | Buff / Tan / Fawn | Calico                                                            -> Calico
+Chocolate Point | White                                                                              -> Chocolate Point
+Tabby (Orange / Red) | Tabby (Tiger Striped)                                                         -> Tabby (Orange / Red)
+White | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                                        -> Tabby (Brown / Chocolate)
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | Tabby (Leopard / Spotted)                      -> Tabby (Gray / Blue / Silver)
+Buff / Tan / Fawn | Gray / Blue / Silver | Tabby (Gray / Blue / Silver)                              -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Tabby (Leopard / Spotted) | Tabby (Tiger Striped)                     -> Tabby (Gray / Blue / Silver)
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped) | Gray / Blue / Silver                          -> Tabby (Gray / Blue / Silver)
+Tortoiseshell | Brown / Chocolate | Orange / Red                                                     -> Tortoiseshell
+White | Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                                     -> Tabby (Gray / Blue / Silver)
+Torbie | Tortoiseshell | Calico                                                                      -> Calico
+Dilute Calico | Dilute Tortoiseshell                                                                 -> Dilute Calico
+Brown / Chocolate | Tabby (Brown / Chocolate) | Tabby (Leopard / Spotted)                            -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | Tabby (Leopard / Spotted)                                                -> Tabby (Brown / Chocolate)
+Dilute Tortoiseshell | Dilute Calico                                                                 -> Dilute Calico
+Orange & White | White                                                                               -> Orange & White
+Calico | Black & White / Tuxedo | Dilute Calico                                                      -> Black & White / Tuxedo
+Buff / Tan / Fawn | Tabby (Buff / Tan / Fawn) | Tabby (Orange / Red)                                 -> Tabby (Buff / Tan / Fawn)
+Buff & White | Cream / Ivory | Orange & White                                                        -> Buff & White
+Torbie | Calico | Tabby (Gray / Blue / Silver)                                                       -> Calico
+Calico | Tabby (Tiger Striped)                                                                       -> Calico
+Black & White / Tuxedo | Gray / Blue / Silver | Gray & White                                         -> Black & White / Tuxedo
+Torbie | Tabby (Tiger Striped) | Tabby (Leopard / Spotted)                                           -> Torbie
+Brown / Chocolate | Tabby (Brown / Chocolate) | Tabby (Orange / Red)                                 -> Tabby (Brown / Chocolate)
+Dilute Tortoiseshell | Tabby (Gray / Blue / Silver) | White                                          -> Dilute Tortoiseshell
+Tabby (Brown / Chocolate) | Buff / Tan / Fawn                                                        -> Tabby (Brown / Chocolate)
+Buff / Tan / Fawn | Tortoiseshell                                                                    -> Tortoiseshell
+Black | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                                        -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Orange & White | Buff & White                                            -> Tabby (Buff / Tan / Fawn)
+Brown / Chocolate | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                                -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Chocolate Point | Tabby (Tiger Striped)                                          -> Chocolate Point
+Brown / Chocolate | White | Black                                                                    -> Black & White / Tuxedo
+Tabby (Leopard / Spotted) | Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped)                     -> Tabby (Leopard / Spotted)
+Seal Point | Buff / Tan / Fawn                                                                       -> Seal Point
+Tabby (Gray / Blue / Silver) | Tabby (Leopard / Spotted) | Tabby (Buff / Tan / Fawn)                 -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Tabby (Leopard / Spotted) | Tabby (Tiger Striped)                        -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Tabby (Tiger Striped) | Tabby (Leopard / Spotted)                                -> Tabby (Tiger Striped)
+White | Orange & White | Tabby (Orange / Red)                                                        -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Gray / Blue / Silver                                                     -> Tabby (Brown / Chocolate)
+Tabby (Gray / Blue / Silver) | Tabby (Leopard / Spotted)                                             -> Tabby (Gray / Blue / Silver)
+Gray / Blue / Silver | Black & White / Tuxedo | Black                                                -> Black & White / Tuxedo
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | Gray & White                                   -> Tabby (Gray / Blue / Silver)
+Gray / Blue / Silver | White | Black                                                                 -> Black & White / Tuxedo
+Buff / Tan / Fawn | Gray & White                                                                     -> Buff & White
+Black | Calico                                                                                       -> Calico
+Torbie | Tabby (Brown / Chocolate) | Dilute Calico                                                   -> Dilute Calico
+Blue Point | Calico                                                                                  -> Blue Point
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | White                                          -> Tabby (Gray / Blue / Silver)
+Brown / Chocolate | Gray & White                                                                     -> Brown & White
+White | Gray & White | Black & White / Tuxedo                                                        -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Orange / Red) | White                                             -> Tabby (Brown / Chocolate)
+White | Tabby (Brown / Chocolate) | Tabby (Orange / Red)                                             -> Tabby (Brown / Chocolate)
+Tabby (Tiger Striped) | Gray & White | Tabby (Gray / Blue / Silver)                                  -> Tabby (Tiger Striped)
+Tabby (Gray / Blue / Silver) | Black & White / Tuxedo | Tabby (Buff / Tan / Fawn)                    -> Black & White / Tuxedo
+Calico | Dilute Calico | Torbie                                                                      -> Dilute Calico
+Tortoiseshell | Dilute Tortoiseshell | Torbie                                                        -> Dilute Tortoiseshell
+Tabby (Leopard / Spotted) | Torbie                                                                   -> Torbie
+White | Cream / Ivory                                                                                -> Buff & White
+Dilute Tortoiseshell | Smoke | Tabby (Gray / Blue / Silver)                                          -> Dilute Tortoiseshell
+Buff & White | Tabby (Orange / Red)                                                                  -> Tabby (Orange / Red)
+Tabby (Tiger Striped) | Orange / Red | Orange & White                                                -> Tabby (Tiger Striped)
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped) | Tabby (Leopard / Spotted)                     -> Tabby (Gray / Blue / Silver)
+Orange & White | Gray & White                                                                        -> Orange & White
+Tabby (Brown / Chocolate) | White | Black & White / Tuxedo                                           -> Black & White / Tuxedo
+Buff / Tan / Fawn | Brown / Chocolate | Tabby (Brown / Chocolate)                                    -> Tabby (Brown / Chocolate)
+Tabby (Gray / Blue / Silver) | Brown / Chocolate | Tabby (Brown / Chocolate)                         -> Tabby (Gray / Blue / Silver)
+Black | Dilute Tortoiseshell | Gray / Blue / Silver                                                  -> Dilute Tortoiseshell
+Tabby (Brown / Chocolate) | Buff / Tan / Fawn | Brown / Chocolate                                    -> Tabby (Brown / Chocolate)
+White | Tabby (Buff / Tan / Fawn) | Tortoiseshell                                                    -> Tortoiseshell
+Torbie | Calico | Tabby (Brown / Chocolate)                                                          -> Calico
+Gray / Blue / Silver | Orange / Red | Cream / Ivory                                                  -> Gray / Blue / Silver
+Tabby (Orange / Red) | White | Orange & White                                                        -> Tabby (Orange / Red)
+Buff / Tan / Fawn | Cream / Ivory | White                                                            -> Buff & White
+Orange / Red | Tabby (Orange / Red) | Buff / Tan / Fawn                                              -> Tabby (Orange / Red)
+Cream / Ivory | Flame Point                                                                          -> Flame Point
+White | Black & White / Tuxedo | Tabby (Buff / Tan / Fawn)                                           -> Black & White / Tuxedo
+Cream / Ivory | Black | Orange & White                                                               -> Buff & White
+Orange & White | Smoke                                                                               -> Smoke
+Tabby (Tiger Striped) | Tabby (Brown / Chocolate) | Smoke                                            -> Tabby (Tiger Striped)
+Black & White / Tuxedo | Calico | White                                                              -> Black & White / Tuxedo
+Gray & White | Black & White / Tuxedo | Gray / Blue / Silver                                         -> Black & White / Tuxedo
+Black & White / Tuxedo | Tabby (Gray / Blue / Silver) | Tortoiseshell                                -> Black & White / Tuxedo
+Black | Tabby (Orange / Red) | Tabby (Tiger Striped)                                                 -> Tabby (Orange / Red)
+Buff / Tan / Fawn | Buff & White | Tabby (Buff / Tan / Fawn)                                         -> Tabby (Buff / Tan / Fawn)
+Calico | Black & White / Tuxedo                                                                      -> Black & White / Tuxedo
+Brown / Chocolate | Buff & White | Tabby (Tiger Striped)                                             -> Tabby (Tiger Striped)
+Tabby (Gray / Blue / Silver) | Tabby (Orange / Red) | White                                          -> Tabby (Gray / Blue / Silver)
+Black & White / Tuxedo | Buff / Tan / Fawn                                                           -> Black & White / Tuxedo
+Black | Tabby (Gray / Blue / Silver) | Gray / Blue / Silver                                          -> Tabby (Gray / Blue / Silver)
+Blue Point | Gray / Blue / Silver                                                                    -> Blue Point
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | Tabby (Orange / Red)                           -> Tabby (Gray / Blue / Silver)
+Seal Point | Black                                                                                   -> Seal Point
+Black | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                                            -> Tabby (Brown / Chocolate)
+Torbie | Orange & White | Tabby (Tiger Striped)                                                      -> Torbie
+Calico | Brown / Chocolate                                                                           -> Calico
+Buff & White | Gray / Blue / Silver | Gray & White                                                   -> Gray & White
+Tabby (Leopard / Spotted) | Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver)                     -> Tabby (Leopard / Spotted)
+Tabby (Orange / Red) | Tortoiseshell                                                                 -> Tortoiseshell
+Tabby (Buff / Tan / Fawn) | Tortoiseshell                                                            -> Tortoiseshell
+Cream / Ivory | Black | Buff / Tan / Fawn                                                            -> Cream / Ivory
+Orange & White | Orange / Red | Tabby (Gray / Blue / Silver)                                         -> Tabby (Gray / Blue / Silver)
+Tabby (Orange / Red) | Black                                                                         -> Tabby (Orange / Red)
+Cream Point | Cream / Ivory | Tabby (Orange / Red)                                                   -> Cream Point
+Buff & White | Cream Point | Flame Point                                                             -> Cream Point
+Buff & White | Gray & White | Tabby (Buff / Tan / Fawn)                                              -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Tabby (Gray / Blue / Silver)                                                -> Black & White / Tuxedo
+Gray / Blue / Silver | Dilute Tortoiseshell                                                          -> Dilute Tortoiseshell
+Tabby (Brown / Chocolate) | Calico | Torbie                                                          -> Calico
+Tabby (Brown / Chocolate) | Calico | Tabby (Orange / Red)                                            -> Calico
+Black | Calico | Tabby (Gray / Blue / Silver)                                                        -> Calico
+White | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                                     -> Tabby (Brown / Chocolate)
+Dilute Tortoiseshell | Torbie                                                                        -> Dilute Tortoiseshell
+Blue Cream | Dilute Tortoiseshell                                                                    -> Dilute Tortoiseshell
+White | Tabby (Brown / Chocolate) | Black                                                            -> Tabby (Brown / Chocolate)
+Calico | Torbie | Tabby (Brown / Chocolate)                                                          -> Calico
+Orange / Red | White | Tabby (Orange / Red)                                                          -> Tabby (Orange / Red)
+White | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                                        -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Tabby (Buff / Tan / Fawn) | Black                                           -> Black & White / Tuxedo
+Orange / Red | Tabby (Orange / Red) | White                                                          -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Brown / Chocolate                                -> Tabby (Brown / Chocolate)
+Tabby (Tiger Striped) | Gray & White                                                                 -> Tabby (Tiger Striped)
+Buff & White | Tabby (Buff / Tan / Fawn)                                                             -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Tabby (Orange / Red) | Orange & White                                    -> Tabby (Buff / Tan / Fawn)
+Blue Cream | Calico                                                                                  -> Calico
+Torbie | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                                       -> Torbie
+Buff & White | Orange & White                                                                        -> Buff & White
+Tabby (Gray / Blue / Silver) | Dilute Calico                                                         -> Dilute Calico
+Gray & White | Gray / Blue / Silver | Smoke                                                          -> Smoke
+Buff / Tan / Fawn | Tabby (Buff / Tan / Fawn) | White                                                -> Tabby (Buff / Tan / Fawn)
+Buff & White | Gray & White                                                                          -> Buff & White
+Orange / Red | White | Orange & White                                                                -> Orange & White
+White | Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver)                                     -> Tabby (Buff / Tan / Fawn)
+Buff / Tan / Fawn | Tabby (Tiger Striped)                                                            -> Tabby (Tiger Striped)
+Tabby (Brown / Chocolate) | Torbie | Tabby (Buff / Tan / Fawn)                                       -> Torbie
+Gray & White | Black                                                                                 -> Gray & White
+Dilute Calico | Torbie | Dilute Tortoiseshell                                                        -> Dilute Calico
+Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                        -> Tabby (Buff / Tan / Fawn)
+Tabby (Brown / Chocolate) | White | Buff & White                                                     -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Tortoiseshell                                -> Tortoiseshell
+Tabby (Tiger Striped) | Orange & White                                                               -> Tabby (Tiger Striped)
+White | Gray / Blue / Silver | Tabby (Gray / Blue / Silver)                                          -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Orange / Red                                     -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Tabby (Orange / Red)                             -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Black | Tabby (Brown / Chocolate)                                                -> Tabby (Brown / Chocolate)
+Gray & White | Gray / Blue / Silver | Buff & White                                                   -> Gray & White
+Tabby (Buff / Tan / Fawn) | Gray / Blue / Silver                                                     -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | White | Tabby (Gray / Blue / Silver)                                        -> Black & White / Tuxedo
+Brown / Chocolate | Black | Torbie                                                                   -> Torbie
+Dilute Tortoiseshell | Tabby (Brown / Chocolate)                                                     -> Dilute Tortoiseshell
+Tabby (Brown / Chocolate) | Black | Brown / Chocolate                                                -> Tabby (Brown / Chocolate)
+Blue Point | Tabby (Leopard / Spotted)                                                               -> Blue Point
+Blue Cream | Tabby (Tiger Striped)                                                                   -> Tabby (Tiger Striped)
+Tabby (Tiger Striped) | Tabby (Leopard / Spotted) | Buff / Tan / Fawn                                -> Tabby (Tiger Striped)
+Tortoiseshell | Gray / Blue / Silver | Blue Cream                                                    -> Tortoiseshell
+Calico | Orange / Red | Tabby (Tiger Striped)                                                        -> Calico
+Calico | Dilute Calico | Dilute Tortoiseshell                                                        -> Dilute Calico
+Tabby (Gray / Blue / Silver) | Buff & White | Gray & White                                           -> Tabby (Gray / Blue / Silver)
+Gray & White | Cream / Ivory                                                                         -> Buff & White
+White | Gray & White | Black                                                                         -> Black & White / Tuxedo
+White | Gray & White | Lilac Point                                                                   -> Lilac Point
+Tortoiseshell | Brown / Chocolate | Buff / Tan / Fawn                                                -> Tortoiseshell
+Gray / Blue / Silver | Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn)                         -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | White                                        -> Tabby (Buff / Tan / Fawn)
+Buff & White | Brown / Chocolate | White                                                             -> Brown & White
+Blue Point | Gray & White                                                                            -> Blue Point
+Black & White / Tuxedo | Tabby (Tiger Striped)                                                       -> Black & White / Tuxedo
+Gray & White | Gray / Blue / Silver | Black & White / Tuxedo                                         -> Black & White / Tuxedo
+Black & White / Tuxedo | Tortoiseshell                                                               -> Black & White / Tuxedo
+Torbie | Tabby (Brown / Chocolate) | Tabby (Tiger Striped)                                           -> Torbie
+Gray / Blue / Silver | White | Gray & White                                                          -> Gray & White
+Tabby (Gray / Blue / Silver) | Cream Point                                                           -> Cream Point
+White | Brown / Chocolate | Tabby (Tiger Striped)                                                    -> Tabby (Tiger Striped)
+Tabby (Tiger Striped) | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                     -> Tabby (Tiger Striped)
+Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn) | Brown / Chocolate                                -> Tabby (Tiger Striped)
+Black & White / Tuxedo | Brown / Chocolate | Calico                                                  -> Black & White / Tuxedo
+Tabby (Buff / Tan / Fawn) | Gray & White | Dilute Calico                                             -> Dilute Calico
+Tabby (Brown / Chocolate) | Brown / Chocolate | Tabby (Buff / Tan / Fawn)                            -> Tabby (Brown / Chocolate)
+Orange / Red | Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn)                                      -> Tabby (Orange / Red)
+Tortoiseshell | Black | Calico                                                                       -> Calico
+Black & White / Tuxedo | Calico | Black                                                              -> Black & White / Tuxedo
+Gray / Blue / Silver | Smoke | White                                                                 -> Smoke
+Black & White / Tuxedo | Blue Cream | Gray & White                                                   -> Black & White / Tuxedo
+Black | White | Tabby (Tiger Striped)                                                                -> Tabby (Tiger Striped)
+Brown / Chocolate | Gray / Blue / Silver | Buff / Tan / Fawn                                         -> Brown / Chocolate
+Tabby (Brown / Chocolate) | Gray & White                                                             -> Tabby (Brown / Chocolate)
+Orange / Red | Tabby (Gray / Blue / Silver)                                                          -> Tabby (Gray / Blue / Silver)
+Gray & White | Orange / Red                                                                          -> Orange & White
+Black & White / Tuxedo | Tabby (Buff / Tan / Fawn) | Gray & White                                    -> Black & White / Tuxedo
+Black & White / Tuxedo | Calico | Tabby (Orange / Red)                                               -> Black & White / Tuxedo
+Gray / Blue / Silver | Tabby (Tiger Striped)                                                         -> Tabby (Tiger Striped)
+Black | Tabby (Tiger Striped) | White                                                                -> Tabby (Tiger Striped)
+Brown / Chocolate | Tabby (Brown / Chocolate) | Buff / Tan / Fawn                                    -> Tabby (Brown / Chocolate)
+White | Buff & White                                                                                 -> White
+Buff / Tan / Fawn | Orange / Red | Orange & White                                                    -> Orange & White
+White | Tabby (Gray / Blue / Silver) | Gray & White                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Calico                                       -> Calico
+Lilac Point | Blue Point | Seal Point                                                                -> Lilac Point
+Lilac Point | Blue Point | Buff & White                                                              -> Lilac Point
+Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                 -> Tabby (Gray / Blue / Silver)
+Lilac Point | Tabby (Gray / Blue / Silver)                                                           -> Lilac Point
+Smoke | Tabby (Brown / Chocolate)                                                                    -> Tabby (Brown / Chocolate)
+Tabby (Leopard / Spotted) | Gray & White | Tabby (Gray / Blue / Silver)                              -> Tabby (Leopard / Spotted)
+Tabby (Brown / Chocolate) | White | Tabby (Leopard / Spotted)                                        -> Tabby (Brown / Chocolate)
+Buff / Tan / Fawn | Tabby (Orange / Red) | Orange & White                                            -> Tabby (Orange / Red)
+Chocolate Point | Tabby (Leopard / Spotted)                                                          -> Chocolate Point
+Calico | Tabby (Brown / Chocolate) | White                                                           -> Calico
+Torbie | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                                       -> Torbie
+Seal Point | Tabby (Leopard / Spotted) | Tabby (Gray / Blue / Silver)                                -> Seal Point
+Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver) | White                                     -> Tabby (Buff / Tan / Fawn)
+Gray / Blue / Silver | Gray & White | Black & White / Tuxedo                                         -> Black & White / Tuxedo
+White | Orange / Red | Flame Point                                                                   -> Flame Point
+Black & White / Tuxedo | Brown / Chocolate                                                           -> Black & White / Tuxedo
+Buff / Tan / Fawn | Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver)                         -> Tabby (Buff / Tan / Fawn)
+Tabby (Gray / Blue / Silver) | White | Tabby (Buff / Tan / Fawn)                                     -> Tabby (Gray / Blue / Silver)
+Buff & White | Seal Point | Cream / Ivory                                                            -> Seal Point
+Black | White | Tabby (Gray / Blue / Silver)                                                         -> Tabby (Gray / Blue / Silver)
+Gray & White | Tabby (Tiger Striped)                                                                 -> Tabby (Tiger Striped)
+Tabby (Buff / Tan / Fawn) | Orange & White                                                           -> Tabby (Buff / Tan / Fawn)
+Blue Point | White | Tabby (Gray / Blue / Silver)                                                    -> Blue Point
+Tortoiseshell | Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                                    -> Tortoiseshell
+Tabby (Gray / Blue / Silver) | Black & White / Tuxedo                                                -> Black & White / Tuxedo
+Torbie | Tabby (Gray / Blue / Silver) | Tabby (Orange / Red)                                         -> Torbie
+Black | Tabby (Orange / Red)                                                                         -> Tabby (Orange / Red)
+Tortoiseshell | Tabby (Gray / Blue / Silver) | Black                                                 -> Tortoiseshell
+Tabby (Gray / Blue / Silver) | Buff & White                                                          -> Tabby (Gray / Blue / Silver)
+Tabby (Buff / Tan / Fawn) | Calico | Buff & White                                                    -> Calico
+Tabby (Buff / Tan / Fawn) | Cream / Ivory                                                            -> Tabby (Buff / Tan / Fawn)
+Buff / Tan / Fawn | Buff & White | Flame Point                                                       -> Flame Point
+Brown / Chocolate | White | Buff / Tan / Fawn                                                        -> Buff & White
+Brown / Chocolate | Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                                -> Tabby (Tiger Striped)
+Tortoiseshell | Tabby (Gray / Blue / Silver) | Black & White / Tuxedo                                -> Black & White / Tuxedo
+Black | Tabby (Orange / Red) | Tortoiseshell                                                         -> Tortoiseshell
+Gray / Blue / Silver | Tabby (Tiger Striped) | White                                                 -> Tabby (Tiger Striped)
+Tabby (Buff / Tan / Fawn) | White | Tabby (Gray / Blue / Silver)                                     -> Tabby (Buff / Tan / Fawn)
+Orange & White | Seal Point | Tabby (Orange / Red)                                                   -> Seal Point
+Tabby (Orange / Red) | Buff / Tan / Fawn | Buff & White                                              -> Tabby (Orange / Red)
+Gray & White | Cream / Ivory | Black                                                                 -> Buff & White
+Black | Tabby (Gray / Blue / Silver) | White                                                         -> Tabby (Gray / Blue / Silver)
+Black & White / Tuxedo | Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                    -> Black & White / Tuxedo
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Brown / Chocolate                            -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | White | Black                                                            -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                       -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Black & White / Tuxedo                    -> Black & White / Tuxedo
+Black & White / Tuxedo | Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn)                    -> Black & White / Tuxedo
+Gray & White | Buff / Tan / Fawn | Orange / Red                                                      -> Orange & White
+Tabby (Brown / Chocolate) | White | Gray & White                                                     -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver) | Tortoiseshell                             -> Tortoiseshell
+Tortoiseshell | Dilute Tortoiseshell | Calico                                                        -> Dilute Calico
+Brown / Chocolate | Tabby (Brown / Chocolate) | Torbie                                               -> Torbie
+Calico | Tabby (Buff / Tan / Fawn) | White                                                           -> Calico
+Tabby (Brown / Chocolate) | White | Tabby (Tiger Striped)                                            -> Tabby (Brown / Chocolate)
+White | Tabby (Buff / Tan / Fawn) | Calico                                                           -> Calico
+Blue Cream | Blue Point                                                                              -> Blue Point
+Tortoiseshell | Tabby (Buff / Tan / Fawn) | Brown / Chocolate                                        -> Tortoiseshell
+Brown / Chocolate | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                            -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Torbie | Buff / Tan / Fawn                                               -> Torbie
+Brown / Chocolate | Orange / Red | Torbie                                                            -> Torbie
+Brown / Chocolate | Black & White / Tuxedo | Buff / Tan / Fawn                                       -> Black & White / Tuxedo
+Tabby (Gray / Blue / Silver) | Orange & White                                                        -> Tabby (Gray / Blue / Silver)
+Cream / Ivory | Orange & White                                                                       -> Buff & White
+Buff / Tan / Fawn | Flame Point                                                                      -> Flame Point
+Gray & White | Tabby (Orange / Red)                                                                  -> Tabby (Orange / Red)
+Cream / Ivory | Gray & White | Tabby (Brown / Chocolate)                                             -> Tabby (Brown / Chocolate)
+Cream / Ivory | Tabby (Gray / Blue / Silver) | Dilute Tortoiseshell                                  -> Dilute Tortoiseshell
+Dilute Tortoiseshell | Blue Cream                                                                    -> Dilute Tortoiseshell
+Torbie | Tabby (Gray / Blue / Silver)                                                                -> Torbie
+White | Brown / Chocolate | Black                                                                    -> Black & White / Tuxedo
+Gray / Blue / Silver | Buff / Tan / Fawn | Brown / Chocolate                                         -> Gray / Blue / Silver
+Dilute Tortoiseshell | Orange & White                                                                -> Dilute Tortoiseshell
+Blue Point | Black & White / Tuxedo                                                                  -> Blue Point
+Tabby (Orange / Red) | Calico | Torbie                                                               -> Calico
+Tabby (Brown / Chocolate) | Black | Tabby (Gray / Blue / Silver)                                     -> Tabby (Brown / Chocolate)
+Cream / Ivory | Buff / Tan / Fawn                                                                    -> Cream / Ivory
+Gray / Blue / Silver | Blue Point                                                                    -> Blue Point
+Cream / Ivory | Torbie                                                                               -> Torbie
+Orange / Red | Dilute Calico | Brown / Chocolate                                                     -> Dilute Calico
+White | Smoke                                                                                        -> Smoke
+Tabby (Tiger Striped) | Torbie | Tabby (Brown / Chocolate)                                           -> Torbie
+Brown / Chocolate | Buff / Tan / Fawn | Cream / Ivory                                                -> Brown / Chocolate
+Black & White / Tuxedo | Black & White / Tuxedo                                                      -> Black & White / Tuxedo
+Cream / Ivory | Gray / Blue / Silver | Brown / Chocolate                                             -> Cream / Ivory
+Tabby (Brown / Chocolate) | Calico | White                                                           -> Calico
+Orange & White | White | Tabby (Gray / Blue / Silver)                                                -> Tabby (Gray / Blue / Silver)
+Black | Gray / Blue / Silver | Buff / Tan / Fawn                                                     -> Gray / Blue / Silver
+Buff / Tan / Fawn | Black | Gray / Blue / Silver                                                     -> Buff / Tan / Fawn
+Orange / Red | Tabby (Buff / Tan / Fawn) | White                                                     -> Tabby (Buff / Tan / Fawn)
+Gray & White | White | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Calico                                       -> Calico
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Buff / Tan / Fawn                            -> Tabby (Buff / Tan / Fawn)
+Tabby (Brown / Chocolate) | Tabby (Leopard / Spotted) | Tabby (Buff / Tan / Fawn)                    -> Tabby (Brown / Chocolate)
+Tabby (Tiger Striped) | Gray / Blue / Silver                                                         -> Tabby (Tiger Striped)
+Black | Buff & White | Buff / Tan / Fawn                                                             -> Buff & White
+Black | Buff / Tan / Fawn | Buff & White                                                             -> Buff & White
+Dilute Calico | Dilute Tortoiseshell | Tortoiseshell                                                 -> Dilute Calico
+Flame Point | Orange & White | Buff & White                                                          -> Flame Point
+Dilute Tortoiseshell | White                                                                         -> Dilute Tortoiseshell
+Buff & White | Buff / Tan / Fawn | Cream / Ivory                                                     -> Buff & White
+Buff / Tan / Fawn | Buff & White | Cream / Ivory                                                     -> Buff & White
+Black | Gray / Blue / Silver | Black & White / Tuxedo                                                -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Brown / Chocolate | Orange / Red                                         -> Tabby (Brown / Chocolate)
+Calico | White | Tabby (Orange / Red)                                                                -> Calico
+Seal Point | White                                                                                   -> Seal Point
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | Smoke                                          -> Tabby (Gray / Blue / Silver)
+Tabby (Tiger Striped) | Torbie | White                                                               -> Torbie
+Seal Point | Chocolate Point | Cream Point                                                           -> Seal Point
+Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                        -> Tabby (Tiger Striped)
+Torbie | Black                                                                                       -> Torbie
+Black & White / Tuxedo | Buff & White | Dilute Calico                                                -> Black & White / Tuxedo
+Brown / Chocolate | Tabby (Gray / Blue / Silver) | White                                             -> Tabby (Gray / Blue / Silver)
+Dilute Calico | Gray & White | Orange / Red                                                          -> Dilute Calico
+Brown / Chocolate | Torbie | Orange / Red                                                            -> Torbie
+Tabby (Orange / Red) | White | Orange / Red                                                          -> Tabby (Orange / Red)
+Buff / Tan / Fawn | Cream / Ivory | Buff & White                                                     -> Buff & White
+Flame Point | Cream Point | Orange & White                                                           -> Flame Point
+Flame Point | Lilac Point                                                                            -> Flame Point
+Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn) | Torbie                                           -> Torbie
+Orange / Red | Tabby (Brown / Chocolate)                                                             -> Tabby (Brown / Chocolate)
+Flame Point | Orange & White                                                                         -> Flame Point
+Blue Point | Black & White / Tuxedo | Tabby (Tiger Striped)                                          -> Blue Point
+Brown / Chocolate | Tabby (Brown / Chocolate) | Black                                                -> Tabby (Brown / Chocolate)
+Brown / Chocolate | Black | White                                                                    -> Black & White / Tuxedo
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn)                        -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | White | Tabby (Buff / Tan / Fawn)                                        -> Tabby (Brown / Chocolate)
+Flame Point | Black                                                                                  -> Flame Point
+Brown / Chocolate | Seal Point                                                                       -> Seal Point
+Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver) | White                                         -> Tabby (Tiger Striped)
+Black | Flame Point                                                                                  -> Flame Point
+Gray / Blue / Silver | Black & White / Tuxedo                                                        -> Black & White / Tuxedo
+Cream / Ivory | Orange / Red                                                                         -> Cream / Ivory
+Tortoiseshell | Orange / Red                                                                         -> Tortoiseshell
+Buff / Tan / Fawn | Buff & White | Blue Cream                                                        -> Gray & White
+Black | Brown / Chocolate | Gray / Blue / Silver                                                     -> Brown / Chocolate
+White | Tabby (Gray / Blue / Silver) | Tabby (Orange / Red)                                          -> Tabby (Gray / Blue / Silver)
+Flame Point | Gray & White                                                                           -> Flame Point
+Tabby (Orange / Red) | Black & White / Tuxedo                                                        -> Black & White / Tuxedo
+Torbie | Tabby (Orange / Red) | Tabby (Brown / Chocolate)                                            -> Torbie
+White | Torbie                                                                                       -> Torbie
+White | Buff / Tan / Fawn | Buff & White                                                             -> Buff & White
+Tabby (Gray / Blue / Silver) | White | Tortoiseshell                                                 -> Tortoiseshell
+Black | Orange / Red | Black & White / Tuxedo                                                        -> Black & White / Tuxedo
+Buff & White | Tabby (Buff / Tan / Fawn) | White                                                     -> Tabby (Buff / Tan / Fawn)
+Cream Point | White | Tabby (Brown / Chocolate)                                                      -> Cream Point
+Tabby (Gray / Blue / Silver) | Tabby (Leopard / Spotted) | Blue Cream                                -> Tabby (Gray / Blue / Silver)
+Dilute Calico | Tabby (Orange / Red) | Tabby (Gray / Blue / Silver)                                  -> Dilute Calico
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Black                                        -> Tabby (Buff / Tan / Fawn)
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Black                                        -> Tabby (Brown / Chocolate)
+Tabby (Buff / Tan / Fawn) | Black | White                                                            -> Tabby (Buff / Tan / Fawn)
+Cream / Ivory | Tabby (Gray / Blue / Silver)                                                         -> Tabby (Gray / Blue / Silver)
+Orange / Red | Tabby (Leopard / Spotted) | Tabby (Orange / Red)                                      -> Tabby (Leopard / Spotted)
+Cream Point | Buff / Tan / Fawn                                                                      -> Cream Point
+Gray / Blue / Silver | Torbie                                                                        -> Torbie
+Gray & White | Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                              -> Tabby (Gray / Blue / Silver)
+Cream Point | Tabby (Brown / Chocolate)                                                              -> Cream Point
+Calico | Tabby (Gray / Blue / Silver)                                                                -> Calico
+Buff / Tan / Fawn | Tabby (Brown / Chocolate)                                                        -> Tabby (Brown / Chocolate)
+Tortoiseshell | Seal Point                                                                           -> Seal Point
+Cream / Ivory | Cream Point | Flame Point                                                            -> Cream Point
+Black | Gray / Blue / Silver | Tabby (Gray / Blue / Silver)                                          -> Tabby (Gray / Blue / Silver)
+Tabby (Brown / Chocolate) | Black | White                                                            -> Tabby (Brown / Chocolate)
+Smoke | White | Black & White / Tuxedo                                                               -> Black & White / Tuxedo
+Black | Orange / Red | Orange & White                                                                -> Orange & White
+Torbie | Orange & White | Tabby (Orange / Red)                                                       -> Torbie
+Torbie | Tabby (Orange / Red) | Tabby (Buff / Tan / Fawn)                                            -> Torbie
+Gray / Blue / Silver | Gray & White | Orange / Red                                                   -> Gray & White
+Brown / Chocolate | Tabby (Buff / Tan / Fawn) | White                                                -> Tabby (Buff / Tan / Fawn)
+White | Gray / Blue / Silver | Buff / Tan / Fawn                                                     -> Gray & White
+White | Cream Point                                                                                  -> Cream Point
+Black | Gray / Blue / Silver | Smoke                                                                 -> Smoke
+Tortoiseshell | Buff & White                                                                         -> Tortoiseshell
+Brown / Chocolate | Tortoiseshell                                                                    -> Tortoiseshell
+Tabby (Orange / Red) | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Orange / Red)
+Gray / Blue / Silver | Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn)                             -> Tabby (Tiger Striped)
+Tabby (Gray / Blue / Silver) | Tabby (Buff / Tan / Fawn) | Gray / Blue / Silver                      -> Tabby (Gray / Blue / Silver)
+Torbie | Tabby (Tiger Striped) | Tabby (Brown / Chocolate)                                           -> Torbie
+Gray & White | Brown / Chocolate                                                                     -> Brown & White
+Torbie | Brown / Chocolate | White                                                                   -> Torbie
+Tabby (Buff / Tan / Fawn) | Orange / Red | Black                                                     -> Tabby (Buff / Tan / Fawn)
+Orange / Red | Tortoiseshell                                                                         -> Tortoiseshell
+Orange & White | Orange / Red | Buff / Tan / Fawn                                                    -> Orange & White
+Gray / Blue / Silver | Tabby (Tiger Striped) | Tabby (Orange / Red)                                  -> Tabby (Tiger Striped)
+Tabby (Brown / Chocolate) | Brown / Chocolate | Black                                                -> Tabby (Brown / Chocolate)
+Torbie | Tabby (Tiger Striped)                                                                       -> Torbie
+Orange / Red | Tabby (Orange / Red) | Tabby (Tiger Striped)                                          -> Tabby (Orange / Red)
+Tabby (Tiger Striped) | Orange / Red | Tabby (Orange / Red)                                          -> Tabby (Tiger Striped)
+Smoke | Black                                                                                        -> Smoke
+Tabby (Orange / Red) | Orange / Red | Tabby (Tiger Striped)                                          -> Tabby (Orange / Red)
+Dilute Tortoiseshell | Lilac Point                                                                   -> Lilac Point
+Smoke | White                                                                                        -> Smoke
+Cream / Ivory | Black | White                                                                        -> Black & White / Tuxedo
+Tabby (Buff / Tan / Fawn) | Black | Buff / Tan / Fawn                                                -> Tabby (Buff / Tan / Fawn)
+Orange & White | Torbie                                                                              -> Torbie
+Black & White / Tuxedo | Orange / Red | Tabby (Gray / Blue / Silver)                                 -> Black & White / Tuxedo
+Tabby (Gray / Blue / Silver) | Tabby (Orange / Red) | Tabby (Leopard / Spotted)                      -> Tabby (Gray / Blue / Silver)
+Orange & White | Black & White / Tuxedo | Gray & White                                               -> Black & White / Tuxedo
+Black | Black & White / Tuxedo | Orange & White                                                      -> Black & White / Tuxedo
+Black & White / Tuxedo | Calico | Gray & White                                                       -> Black & White / Tuxedo
+Black & White / Tuxedo | Gray & White | Orange & White                                               -> Black & White / Tuxedo
+Brown / Chocolate | Tabby (Gray / Blue / Silver) | Tabby (Brown / Chocolate)                         -> Tabby (Gray / Blue / Silver)
+Black & White / Tuxedo | Tabby (Buff / Tan / Fawn) | Buff & White                                    -> Black & White / Tuxedo
+Buff / Tan / Fawn | Black | Brown / Chocolate                                                        -> Buff / Tan / Fawn
+Orange & White | White | Tabby (Orange / Red)                                                        -> Tabby (Orange / Red)
+Black | Gray & White | Tabby (Gray / Blue / Silver)                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Buff / Tan / Fawn) | Torbie | Tabby (Brown / Chocolate)                                       -> Torbie
+Brown / Chocolate | Buff & White | Gray & White                                                      -> Brown & White
+Torbie | Tabby (Brown / Chocolate) | Brown / Chocolate                                               -> Torbie
+Gray & White | Tabby (Leopard / Spotted)                                                             -> Tabby (Leopard / Spotted)
+Lilac Point | Seal Point                                                                             -> Lilac Point
+Buff / Tan / Fawn | Brown / Chocolate | Seal Point                                                   -> Seal Point
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Cream / Ivory                                -> Tabby (Buff / Tan / Fawn)
+Tabby (Gray / Blue / Silver) | Smoke | Gray & White                                                  -> Tabby (Gray / Blue / Silver)
+Tabby (Leopard / Spotted) | Brown / Chocolate | Chocolate Point                                      -> Chocolate Point
+Dilute Calico | Cream / Ivory                                                                        -> Dilute Calico
+Dilute Calico | Seal Point                                                                           -> Seal Point
+Black | White | Tabby (Buff / Tan / Fawn)                                                            -> Tabby (Buff / Tan / Fawn)
+Tabby (Brown / Chocolate) | White | Tabby (Orange / Red)                                             -> Tabby (Brown / Chocolate)
+Gray & White | Tortoiseshell                                                                         -> Tortoiseshell
+Blue Cream | Dilute Calico | Lilac Point                                                             -> Lilac Point
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped) | Tabby (Buff / Tan / Fawn)                     -> Tabby (Gray / Blue / Silver)
+Gray / Blue / Silver | Gray & White | Smoke                                                          -> Smoke
+Brown / Chocolate | Tabby (Brown / Chocolate) | Tabby (Gray / Blue / Silver)                         -> Tabby (Brown / Chocolate)
+Tortoiseshell | Brown / Chocolate | White                                                            -> Tortoiseshell
+Tabby (Buff / Tan / Fawn) | Tabby (Gray / Blue / Silver) | Tabby (Orange / Red)                      -> Tabby (Buff / Tan / Fawn)
+Calico | Dilute Calico | Tabby (Buff / Tan / Fawn)                                                   -> Dilute Calico
+Brown / Chocolate | Buff & White | Tabby (Brown / Chocolate)                                         -> Tabby (Brown / Chocolate)
+Tabby (Gray / Blue / Silver) | Chocolate Point | White                                               -> Chocolate Point
+Gray & White | Blue Cream | Black & White / Tuxedo                                                   -> Black & White / Tuxedo
+Buff / Tan / Fawn | Black & White / Tuxedo | Buff & White                                            -> Black & White / Tuxedo
+Orange & White | Tabby (Brown / Chocolate) | Black & White / Tuxedo                                  -> Black & White / Tuxedo
+Brown / Chocolate | Tabby (Tiger Striped)                                                            -> Tabby (Tiger Striped)
+Orange & White | Gray & White | Calico                                                               -> Calico
+Tabby (Tiger Striped) | Tabby (Orange / Red) | Orange & White                                        -> Tabby (Tiger Striped)
+Tortoiseshell | Torbie | Black                                                                       -> Tortoiseshell
+Tabby (Gray / Blue / Silver) | Smoke                                                                 -> Tabby (Gray / Blue / Silver)
+Brown / Chocolate | Smoke                                                                            -> Smoke
+Gray / Blue / Silver | Lilac Point                                                                   -> Lilac Point
+Dilute Tortoiseshell | Dilute Calico | Gray / Blue / Silver                                          -> Dilute Calico
+Tabby (Buff / Tan / Fawn) | Gray / Blue / Silver | Tabby (Gray / Blue / Silver)                      -> Tabby (Buff / Tan / Fawn)
+Black | Tabby (Tiger Striped) | Gray / Blue / Silver                                                 -> Tabby (Tiger Striped)
+Cream Point | Orange / Red                                                                           -> Cream Point
+Orange & White | White | Tabby (Buff / Tan / Fawn)                                                   -> Tabby (Buff / Tan / Fawn)
+Tabby (Gray / Blue / Silver) | Blue Cream | White                                                    -> Tabby (Gray / Blue / Silver)
+Seal Point | Dilute Tortoiseshell | Gray / Blue / Silver                                             -> Seal Point
+Dilute Calico | White | Gray / Blue / Silver                                                         -> Dilute Calico
+Tabby (Brown / Chocolate) | Tabby (Buff / Tan / Fawn) | Tabby (Leopard / Spotted)                    -> Tabby (Brown / Chocolate)
+Tabby (Brown / Chocolate) | Orange / Red | White                                                     -> Tabby (Brown / Chocolate)
+Buff / Tan / Fawn | Buff & White | Orange & White                                                    -> Buff & White
+Black | Black & White / Tuxedo | Buff & White                                                        -> Black & White / Tuxedo
+Calico | Torbie | Tortoiseshell                                                                      -> Calico
+Tabby (Gray / Blue / Silver) | Tortoiseshell                                                         -> Tortoiseshell
+White | Gray / Blue / Silver | Buff & White                                                          -> Gray & White
+Black | Orange / Red | White                                                                         -> Black & White / Tuxedo
+Tortoiseshell | Calico | Tabby (Brown / Chocolate)                                                   -> Calico
+Buff / Tan / Fawn | Black | White                                                                    -> Black & White / Tuxedo
+Orange / Red | Blue Cream                                                                            -> Orange / Red
+Black & White / Tuxedo | Tabby (Brown / Chocolate) | Gray / Blue / Silver                            -> Black & White / Tuxedo
+Tabby (Leopard / Spotted) | Tabby (Brown / Chocolate) | White                                        -> Tabby (Leopard / Spotted)
+Gray / Blue / Silver | Blue Point | Lilac Point                                                      -> Blue Point
+Orange / Red | Cream Point                                                                           -> Cream Point
+Tabby (Gray / Blue / Silver) | Black | Gray & White                                                  -> Tabby (Gray / Blue / Silver)
+White | Calico | Tabby (Buff / Tan / Fawn)                                                           -> Calico
+Calico | White | Black & White / Tuxedo                                                              -> Black & White / Tuxedo
+Cream / Ivory | Brown / Chocolate | Gray & White                                                     -> Buff & White
+Tortoiseshell | Gray & White | Gray / Blue / Silver                                                  -> Tortoiseshell
+Buff / Tan / Fawn | Buff & White | Tabby (Orange / Red)                                              -> Tabby (Orange / Red)
+Tabby (Orange / Red) | Cream / Ivory                                                                 -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | Cream / Ivory                                                            -> Tabby (Brown / Chocolate)
+Orange & White | Dilute Calico | Tabby (Orange / Red)                                                -> Dilute Calico
+White | Tabby (Brown / Chocolate) | Orange / Red                                                     -> Tabby (Brown / Chocolate)
+Gray / Blue / Silver | Tabby (Brown / Chocolate) | White                                             -> Tabby (Brown / Chocolate)
+Gray / Blue / Silver | Gray & White | Calico                                                         -> Calico
+Orange & White | Tabby (Brown / Chocolate) | Calico                                                  -> Calico
+Orange & White | Buff / Tan / Fawn | Buff & White                                                    -> Buff & White
+Blue Cream | Tabby (Gray / Blue / Silver)                                                            -> Tabby (Gray / Blue / Silver)
+Smoke | Gray / Blue / Silver                                                                         -> Smoke
+Tabby (Brown / Chocolate) | Black & White / Tuxedo | Orange & White                                  -> Black & White / Tuxedo
+Buff & White | Black & White / Tuxedo                                                                -> Black & White / Tuxedo
+Calico | Tabby (Buff / Tan / Fawn) | Torbie                                                          -> Calico
+Buff / Tan / Fawn | White | Tabby (Buff / Tan / Fawn)                                                -> Tabby (Buff / Tan / Fawn)
+Black & White / Tuxedo | Tabby (Tiger Striped) | White                                               -> Black & White / Tuxedo
+Orange & White | Black & White / Tuxedo                                                              -> Black & White / Tuxedo
+Cream / Ivory | Tortoiseshell                                                                        -> Tortoiseshell
+Black | Brown / Chocolate | White                                                                    -> Black & White / Tuxedo
+White | Orange / Red | Calico                                                                        -> Calico
+Gray / Blue / Silver | Tabby (Tiger Striped) | Torbie                                                -> Torbie
+Orange / Red | White | Calico                                                                        -> Calico
+Black | White | Orange / Red                                                                         -> Black & White / Tuxedo
+Calico | Brown / Chocolate | Seal Point                                                              -> Seal Point
+Orange / Red | White | Black                                                                         -> Black & White / Tuxedo
+Dilute Calico | White | Orange & White                                                               -> Dilute Calico
+Black | Tortoiseshell | Orange / Red                                                                 -> Tortoiseshell
+Black | Calico | Orange / Red                                                                        -> Calico
+Tabby (Gray / Blue / Silver) | Cream / Ivory | Tabby (Brown / Chocolate)                             -> Tabby (Gray / Blue / Silver)
+Torbie | Tabby (Buff / Tan / Fawn) | Brown / Chocolate                                               -> Torbie
+Tabby (Brown / Chocolate) | Tabby (Tiger Striped) | Torbie                                           -> Torbie
+Tabby (Buff / Tan / Fawn) | Buff / Tan / Fawn | Cream / Ivory                                        -> Tabby (Buff / Tan / Fawn)
+Gray / Blue / Silver | Smoke                                                                         -> Smoke
+White | Tortoiseshell                                                                                -> Tortoiseshell
+Dilute Tortoiseshell | Gray & White                                                                  -> Dilute Tortoiseshell
+Tortoiseshell | Orange & White | Black                                                               -> Tortoiseshell
+White | Buff & White | Gray & White                                                                  -> White
+Brown / Chocolate | Tabby (Leopard / Spotted)                                                        -> Tabby (Leopard / Spotted)
+Dilute Tortoiseshell | Tortoiseshell | Gray / Blue / Silver                                          -> Dilute Tortoiseshell
+Gray & White | Tabby (Buff / Tan / Fawn)                                                             -> Tabby (Buff / Tan / Fawn)
+White | Tabby (Orange / Red) | Black                                                                 -> Tabby (Orange / Red)
+Tabby (Brown / Chocolate) | White | Black                                                            -> Tabby (Brown / Chocolate)
+Gray / Blue / Silver | Dilute Calico                                                                 -> Dilute Calico
+Dilute Tortoiseshell | Tabby (Orange / Red) | White                                                  -> Dilute Tortoiseshell
+Seal Point | Orange / Red | Tabby (Orange / Red)                                                     -> Seal Point
+Calico | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                                       -> Calico
+Gray / Blue / Silver | Dilute Calico | Dilute Tortoiseshell                                          -> Dilute Calico
+Torbie | Tabby (Brown / Chocolate) | Tortoiseshell                                                   -> Tortoiseshell
+Calico | Tortoiseshell | Tabby (Buff / Tan / Fawn)                                                   -> Calico
+Blue Cream | Gray & White | Cream / Ivory                                                            -> Gray & White
+Tabby (Buff / Tan / Fawn) | Brown / Chocolate | Torbie                                               -> Torbie
+Tabby (Leopard / Spotted) | White | Cream / Ivory                                                    -> Tabby (Leopard / Spotted)
+Black | Black & White / Tuxedo | Cream / Ivory                                                       -> Black & White / Tuxedo
+Black & White / Tuxedo | Calico | Cream / Ivory                                                      -> Black & White / Tuxedo
+Black & White / Tuxedo | Tabby (Tiger Striped) | Tortoiseshell                                       -> Black & White / Tuxedo
+Black | Brown / Chocolate | Gray & White                                                             -> Brown & White
+Tabby (Gray / Blue / Silver) | Tabby (Tiger Striped) | Torbie                                        -> Torbie
+Tabby (Gray / Blue / Silver) | Torbie                                                                -> Torbie
+Blue Cream | Dilute Tortoiseshell | Tabby (Gray / Blue / Silver)                                     -> Dilute Tortoiseshell
+Tabby (Orange / Red) | Tortoiseshell | Torbie                                                        -> Tortoiseshell
+Cream / Ivory | Tabby (Gray / Blue / Silver) | Smoke                                                 -> Tabby (Gray / Blue / Silver)
+Dilute Tortoiseshell | Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate)                         -> Dilute Tortoiseshell
+White | Buff / Tan / Fawn | Black                                                                    -> Black & White / Tuxedo
+Orange & White | Tabby (Brown / Chocolate) | White                                                   -> Tabby (Brown / Chocolate)
+Orange / Red | White | Brown / Chocolate                                                             -> Orange & White
+Buff & White | Cream / Ivory | Buff / Tan / Fawn                                                     -> Buff & White
+Tabby (Buff / Tan / Fawn) | Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver)                     -> Tabby (Buff / Tan / Fawn)
+Calico | Torbie | Tabby (Buff / Tan / Fawn)                                                          -> Calico
+Cream / Ivory | White | Flame Point                                                                  -> Flame Point
+Tortoiseshell | White | Calico                                                                       -> Calico
+Orange / Red | Gray & White                                                                          -> Orange & White
+Black & White / Tuxedo | Calico | Orange & White                                                     -> Black & White / Tuxedo
+Tabby (Buff / Tan / Fawn) | Tabby (Leopard / Spotted)                                                -> Tabby (Buff / Tan / Fawn)
+Gray & White | Calico                                                                                -> Calico
+Dilute Calico | Lilac Point                                                                          -> Lilac Point
+Cream / Ivory | Black                                                                                -> Cream / Ivory
+Tabby (Brown / Chocolate) | Orange / Red | Torbie                                                    -> Torbie
+Black | Tabby (Gray / Blue / Silver) | Dilute Tortoiseshell                                          -> Dilute Tortoiseshell
+Tabby (Orange / Red) | Tortoiseshell | Black                                                         -> Tortoiseshell
+Torbie | Tabby (Brown / Chocolate) | Orange / Red                                                    -> Torbie
+Black | Torbie                                                                                       -> Torbie
+Tortoiseshell | Black | Buff / Tan / Fawn                                                            -> Tortoiseshell
+Black | Calico | Orange & White                                                                      -> Calico
+Gray / Blue / Silver | Tabby (Gray / Blue / Silver) | Black                                          -> Tabby (Gray / Blue / Silver)
+White | Orange / Red | Black                                                                         -> Black & White / Tuxedo
+Black & White / Tuxedo | Calico | Tabby (Gray / Blue / Silver)                                       -> Black & White / Tuxedo
+Black | Buff / Tan / Fawn | White                                                                    -> Black & White / Tuxedo
+White | Tabby (Orange / Red) | Orange & White                                                        -> Tabby (Orange / Red)
+Brown / Chocolate | Tabby (Tiger Striped) | Tabby (Gray / Blue / Silver)                             -> Tabby (Tiger Striped)
+Blue Point | Smoke                                                                                   -> Blue Point
+White | Seal Point                                                                                   -> Seal Point
+Calico | Buff & White                                                                                -> Calico
+Dilute Calico | Orange / Red                                                                         -> Dilute Calico
+Buff / Tan / Fawn | Gray / Blue / Silver | Tabby (Buff / Tan / Fawn)                                 -> Tabby (Buff / Tan / Fawn)
+Calico | Dilute Calico | Tabby (Brown / Chocolate)                                                   -> Dilute Calico
+Black | Brown / Chocolate | Tabby (Brown / Chocolate)                                                -> Tabby (Brown / Chocolate)
+Tabby (Tiger Striped) | Lilac Point                                                                  -> Lilac Point
+Cream / Ivory | Smoke                                                                                -> Smoke
+Gray & White | Black & White / Tuxedo | White                                                        -> Black & White / Tuxedo
+Tabby (Tiger Striped) | Buff & White                                                                 -> Tabby (Tiger Striped)
+Seal Point | Tortoiseshell                                                                           -> Seal Point
+Tabby (Tiger Striped) | Tabby (Orange / Red)                                                         -> Tabby (Tiger Striped)
+Gray & White | Tabby (Brown / Chocolate) | White                                                     -> Tabby (Brown / Chocolate)
+Tabby (Orange / Red) | Tabby (Tiger Striped) | Orange / Red                                          -> Tabby (Orange / Red)
+Tabby (Gray / Blue / Silver) | Gray & White | Tabby (Buff / Tan / Fawn)                              -> Tabby (Gray / Blue / Silver)
+Brown / Chocolate | Black | Cream / Ivory                                                            -> Brown / Chocolate
+Brown / Chocolate | Tabby (Tiger Striped) | Torbie                                                   -> Torbie
+Tabby (Buff / Tan / Fawn) | Gray & White                                                             -> Tabby (Buff / Tan / Fawn)
+Cream / Ivory | Orange / Red | Tabby (Buff / Tan / Fawn)                                             -> Tabby (Buff / Tan / Fawn)
+Tabby (Buff / Tan / Fawn) | Tabby (Brown / Chocolate) | Dilute Calico                                -> Dilute Calico
+Calico | Dilute Tortoiseshell                                                                        -> Dilute Calico
+Tabby (Leopard / Spotted) | Buff / Tan / Fawn                                                        -> Tabby (Leopard / Spotted)
+Tabby (Orange / Red) | Torbie | Orange / Red                                                         -> Torbie
+Tabby (Tiger Striped) | Tabby (Brown / Chocolate) | Torbie                                           -> Torbie
+Calico | Orange & White | Tabby (Brown / Chocolate)                                                  -> Calico
+Brown / Chocolate | White | Tabby (Tiger Striped)                                                    -> Tabby (Tiger Striped)
+Orange & White | Tabby (Orange / Red) | Buff & White                                                 -> Tabby (Orange / Red)
+Dilute Tortoiseshell | Gray / Blue / Silver | Tortoiseshell                                          -> Dilute Tortoiseshell
+Calico | White | Tabby (Brown / Chocolate)                                                           -> Calico
+Flame Point | White | Black                                                                          -> Flame Point
+
+------------ Colour Imputer Test Results ------------
+{
+    "overall_accuracy": 0.5684210526315789,
+    "total_tested": 25250,
+    "total_predicted": 4370,
+    "method_accuracies": {
+        "description": 0.5684210526315789
+    },
+    "color_accuracies": {
+        "Brown / Chocolate": 0.03937007874015748,
+        "Tortoiseshell": 0.8121546961325967,
+        "Black": 0.7946666666666666,
+        "Tabby (Orange / Red)": 0.4576271186440678,
+        "Gray & White": 0.3650190114068441,
+        "Tabby (Buff / Tan / Fawn)": 0.028985507246376812,
+        "Calico": 0.7942386831275721,
+        "Black & White / Tuxedo": 0.7717528373266078,
+        "Orange / Red": 0.44,
+        "Tabby (Brown / Chocolate)": 0.3774193548387097,
+        "Gray / Blue / Silver": 0.520891364902507,
+        "Tabby (Gray / Blue / Silver)": 0.5341365461847389,
+        "Orange & White": 0.32978723404255317,
+        "Dilute Tortoiseshell": 0.4166666666666667,
+        "Brown & White": 0.0,
+        "Smoke": 0.0,
+        "Dilute Calico": 0.4696969696969697,
+        "Seal Point": 0.75,
+        "Blue Point": 0.125,
+        "Tabby (Tiger Striped)": 0.12903225806451613,
+        "White": 0.47560975609756095,
+        "Flame Point": 0.9090909090909091,
+        "Buff / Tan / Fawn": 0.3064516129032258,
+        "Torbie": 0.5344827586206896,
+        "Buff & White": 0.05,
+        "Cream Point": 0.25,
+        "Cream / Ivory": 0.16666666666666666,
+        "Lilac Point": 0.3333333333333333,
+        "Chocolate Point": 0.5,
+        "Tabby (Leopard / Spotted)": 0.3333333333333333,
+        "Blue Cream": 0.0
+    }
+}
+
+------------  Colour Distribution Comparison ------------
+Color Distribution Comparison: colors_primary vs Cleaned vs After Imputation
+========================================================================================================================
+Color                          Original Count  Original %   Cleaned Count   Cleaned %    Final Count (after impute) Final %     
+------------------------------------------------------------------------------------------------------------------------
+Black                          10898           21.6         8516            16.9         9066                      16.6        
+Black & White / Tuxedo         5880            11.7         8361            16.6         8970                      16.4        
+Gray / Blue / Silver           5416            10.7         4502            8.9          4817                      8.8         
+Tabby (Brown / Chocolate)      4142            8.2          4429            8.8          4792                      8.8         
+Gray & White                   2667            5.3          3528            7.0          3657                      6.7         
+Brown / Chocolate              3868            7.7          3223            6.4          3285                      6.0         
+Tabby (Gray / Blue / Silver)   2229            4.4          2593            5.1          2860                      5.2         
+Calico                         1814            3.6          1937            3.8          2256                      4.1         
+Orange / Red                   2420            4.8          1929            3.8          2152                      3.9         
+Orange & White                 1599            3.2          1977            3.9          2092                      3.8         
+Tortoiseshell                  1504            3.0          1548            3.1          1859                      3.4         
+Tabby (Orange / Red)           1091            2.2          1356            2.7          1653                      3.0         
+White                          2462            4.9          1014            2.0          1270                      2.3         
+Tabby (Buff / Tan / Fawn)      997             2.0          1082            2.1          1104                      2.0         
+Brown & White                  0               0.0          792             1.6          792                       1.4         
+Buff / Tan / Fawn              795             1.6          643             1.3          704                       1.3         
+Torbie                         567             1.1          619             1.2          660                       1.2         
+Tabby (Tiger Striped)          557             1.1          620             1.2          632                       1.2         
+Buff & White                   244             0.5          430             0.9          434                       0.8         
+Dilute Calico                  332             0.7          381             0.8          429                       0.8         
+Dilute Tortoiseshell           305             0.6          331             0.7          358                       0.7         
+Cream / Ivory                  178             0.4          132             0.3          166                       0.3         
+Flame Point                    102             0.2          112             0.2          128                       0.2         
+Seal Point                     93              0.2          101             0.2          114                       0.2         
+Smoke                          48              0.1          68              0.1          95                        0.2         
+Tabby (Leopard / Spotted)      62              0.1          61              0.1          94                        0.2         
+Lilac Point                    51              0.1          65              0.1          68                        0.1         
+Blue Point                     61              0.1          65              0.1          65                        0.1         
+Chocolate Point                35              0.1          39              0.1          39                        0.1         
+Cream Point                    18              0.0          25              0.0          25                        0.0         
+Blue Cream                     30              0.1          21              0.0          21                        0.0         
