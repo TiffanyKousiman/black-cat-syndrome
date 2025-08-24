@@ -4,9 +4,13 @@ Starting preprocessing of 'adopted' cat data ₍^. .^₎⟆ ...
 ✓ Date columns converted successfully.
 ✓ Filtered adopted cats published before 2020, data shape: (841778, 46)
 ✓ `days_to_adopt` column calculated successfully.
+✓ Coat length (short, medium, long, medium) successfully imputed from primary breed column.
+✓ Replace null values with 'Unknown' to capture missing info provided on listing by publisher.
 ✓ Color categories standardized successfully considering primary, secondary and tertiary colors.
 ✓ 24494/218540 cats without colour initially have been imputed.
 ✓ Final color column derived from cleaned and imputed colours successfully.
+✓ Broader colour categories created from final color successfully.
+✓ Dropped unnecessary columns - 'type', 'species', 'distance', 'color_str'.
 ✓ Processed data saved successfully to: cat/2025-08-11/adopted/processed_adopted_cats.csv.
 
 Preprocessing completed  ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ 

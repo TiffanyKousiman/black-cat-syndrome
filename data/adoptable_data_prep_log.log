@@ -3,13 +3,17 @@ Starting preprocessing of 'adoptable' cat data ₍^. .^₎⟆ ...
 ✓ Data loaded successfully from cat/2025-08-11/adoptable/all_adoptable_cats.csv. Shape: (81057, 45)
 ✓ Date columns converted successfully.
 ✓ `days_in_shelter` column calculated successfully.
+✓ Coat length (short, medium, long, medium) successfully imputed from primary breed column.
+✓ Replace null values with 'Unknown' to capture missing info provided on listing by publisher.
 ✓ Color categories standardized successfully considering primary, secondary and tertiary colors.
 ✓ 4157/30557 cats without colour initially have been imputed.
 ✓ Final color column derived from cleaned and imputed colours successfully.
+✓ Broader colour categories created from final color successfully.
+✓ Dropped unnecessary columns - 'type', 'species', 'distance', 'color_str'.
+✓ 2630 adoptable records found already been adopted and have been removed.
 ✓ Processed data saved successfully to: cat/2025-08-11/adoptable/processed_adoptable_cats.csv.
 
 Preprocessing completed  ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧ 
-
 Colour cleaning logs:
 
 

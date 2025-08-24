@@ -175,8 +175,8 @@ def print_color_comparison(df, original_col_to_compare='colors_primary'):
     cleaned_pcts = df['cleaned_color'].value_counts(normalize=True) * 100
 
     # after imputation
-    final_counts = df['final_color'].value_counts()
-    final_pcts = df['final_color'].value_counts(normalize=True) * 100
+    final_counts = df['color'].value_counts()
+    final_pcts = df['color'].value_counts(normalize=True) * 100
     
     # Get all unique colors from both columns
     all_colors = set(original_counts.index) | set(cleaned_counts.index) | set(final_counts.index)
@@ -695,3 +695,132 @@ class CatColorImputer:
             'method_accuracies': method_accuracies,
             'color_accuracies': color_accuracies
         }, results_df
+
+
+def impute_coat_from_breed(breed):
+    """Map cat breed to coat length category."""
+    
+    # Handle missing/null values
+    if not breed or str(breed).lower() == 'nan':
+        return 'Unknown'
+    
+    breed = str(breed).lower().strip()
+    
+    short_coat = {
+        'siamese', 'applehead siamese', 'russian blue', 'scottish fold', 'american shorthair',
+        'bombay', 'burmese', 'abyssinian', 'egyptian mau', 'british shorthair',
+        'exotic shorthair', 'bengal', 'ocicat', 'japanese bobtail', 'tonkinese', 'havana',
+        'chartreux', 'devon rex', 'american wirehair', 'cornish rex', 'oriental tabby',
+        'savannah', 'highland fold', 'toyger', 'korat', 'singapura', 'chausie',
+        'burmilla', 'asian cat', 'domestic short hair', 'oriental short hair'
+    }
+    
+    medium_coat = {
+        'manx', 'american bobtail', 'pixiebob', 'american curl', 'munchkin', 'selkirk rex', 'laperm',
+        'domestic medium hair'
+    }
+    
+    long_coat = {
+        'turkish van', 'ragamuffin', 'maine coon', 'siberian', 'himalayan',
+        'ragdoll', 'british longhair', 'persian', 'turkish angora', 'balinese',
+        'birman', 'cymric', 'nebelung', 'norwegian forest cat', 'somali',
+        'york chocolate', 'oriental long hair', 'javanese', 'chinchilla',
+        'domestic long hair'
+    }
+    
+    hairless = {
+        'sphynx / hairless cat', 'sphynx', 'canadian hairless', 'lykoi'
+    }
+    
+    if breed in short_coat:
+        return 'Short'
+    elif breed in medium_coat:
+        return 'Medium'
+    elif breed in long_coat:
+        return 'Long'
+    elif breed in hairless:
+        return 'Hairless'
+    else:
+        # Color patterns and unknown breeds
+        # coat length depends on the underlying breed (Tortoiseshell, Tabby, Tuxedo, Calico, Tiger, Silver)
+        return 'Unknown'
+    
+
+## HELPER FUNCTION TO INSPECT COLUMN PROPERTIES
+
+def create_metadata_table(df):
+    """
+    Create a comprehensive metadata table for a DataFrame.
+    
+    Parameters:
+    df (pandas.DataFrame): Input DataFrame to analyze
+    
+    Returns:
+    pandas.DataFrame: Metadata table with column information
+    """
+    
+    metadata_list = []
+    
+    for i, column in enumerate(df.columns):
+        # Basic information
+        col_data = df[column]
+        dtype = str(col_data.dtype)
+        non_null_count = col_data.count()
+        null_count = col_data.isnull().sum()
+        
+        # Determine if column is categorical or numerical
+        is_numeric = pd.api.types.is_numeric_dtype(col_data)
+        is_categorical = pd.api.types.is_categorical_dtype(col_data) or dtype == 'object'
+        
+        # Calculate additional information based on data type
+        if is_numeric and not is_categorical:
+            # For numerical columns: calculate range
+            if non_null_count > 0:
+                min_val = col_data.min()
+                max_val = col_data.max()
+                additional_info = f"[{min_val}, {max_val}]"
+                data_category = "Numerical"
+            else:
+                additional_info = "No data"
+                data_category = "Numerical"
+        else:
+            # For categorical columns: get unique values
+            unique_values = col_data.dropna().unique()
+            if len(unique_values) <= 60:  # Show all values if <= 60 unique values
+                additional_info = str(list(unique_values))
+            else:  # Show count if too many unique values
+                additional_info = f"{len(unique_values)} unique values"
+            data_category = "Categorical"
+        
+        # Handle datetime columns
+        if pd.api.types.is_datetime64_any_dtype(col_data):
+            if non_null_count > 0:
+                min_date = col_data.min()
+                max_date = col_data.max()
+                additional_info = f"[{min_date}, {max_date}]"
+            else:
+                additional_info = "No data"
+            data_category = "Datetime"
+        
+        # Create metadata row
+        metadata_row = {
+            'Column': column,
+            'Non-Null Count': non_null_count,
+            'Null Count': null_count,
+            'Dtype': dtype,
+            'Category': data_category,
+            'Values/Range': additional_info
+        }
+        
+        metadata_list.append(metadata_row)
+
+    metadata_df = pd.DataFrame(metadata_list)
+
+    # Add summary information (similar to df.info())
+    print(f"<class 'pandas.core.frame.DataFrame'>")
+    print(f"RangeIndex: {len(df)} entries, 0 to {len(df)-1}")
+    print(f"Data columns (total {len(df.columns)} columns):")
+    print(f"Memory usage: {df.memory_usage(deep=True).sum()} bytes")
+    print("\nDetailed Metadata:")
+        
+    return metadata_df
