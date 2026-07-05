@@ -1,0 +1,42 @@
+{
+    "overall_accuracy": 0.5868438270672908,
+    "total_tested": 100000,
+    "total_predicted": 19869,
+    "method_accuracies": {
+        "description": 0.6047942986718496,
+        "name": 0.340014847809948
+    },
+    "color_accuracies": {
+        "Seal Point": 0.5677083333333334,
+        "Buff & White": 0.12264150943396226,
+        "Gray / Blue / Silver": 0.7031963470319634,
+        "Tabby (Orange / Red)": 0.518918918918919,
+        "Black & White / Tuxedo": 0.7661239824671259,
+        "Tabby (Brown / Chocolate)": 0.4558730158730159,
+        "Tabby (Gray / Blue / Silver)": 0.5523215523215523,
+        "Tortoiseshell": 0.7884972170686456,
+        "Lilac Point": 0.3559322033898305,
+        "Tabby (Leopard / Spotted)": 0.26,
+        "Black": 0.7935849056603773,
+        "Dilute Tortoiseshell": 0.35251798561151076,
+        "Dilute Calico": 0.49193548387096775,
+        "Gray & White": 0.3503184713375796,
+        "Tabby (Tiger Striped)": 0.0625,
+        "White": 0.5877659574468085,
+        "Orange / Red": 0.5530973451327433,
+        "Calico": 0.8166421207658321,
+        "Brown / Chocolate": 0.29012345679012347,
+        "Flame Point": 0.64375,
+        "Torbie": 0.5434083601286174,
+        "Orange & White": 0.2726190476190476,
+        "Tabby (Buff / Tan / Fawn)": 0.0967741935483871,
+        "Cream / Ivory": 0.04081632653061224,
+        "Buff / Tan / Fawn": 0.3036649214659686,
+        "Blue Point": 0.1978021978021978,
+        "Chocolate Point": 0.4,
+        "Blue Cream": 0.06451612903225806,
+        "Brown & White": 0.0,
+        "Cream Point": 0.05128205128205128,
+        "Smoke": 0.171875
+    }
+}
