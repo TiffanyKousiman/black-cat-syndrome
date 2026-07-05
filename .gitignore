@@ -1,2 +1,5 @@
 .env
 .DS_Store
+
+data/cat/2025-08-11/adoptable/*.csv
+data/cat/2025-08-11/adopted/*.csv
